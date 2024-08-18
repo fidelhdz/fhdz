@@ -27,7 +27,8 @@ const { MainTitle, MainDescription } = Astro.props;
         (() => {
             AOS.init({
                 duration: 2000,
-                ease: 'ease-in-out'
+                ease: 'ease-in-out',
+                offset: 100
             });
 
             const menuIcon = document.querySelector(`.menu-icon`);
@@ -35,7 +36,6 @@ const { MainTitle, MainDescription } = Astro.props;
             const theLogo = document.querySelector(`.logo`);
 
             menuIcon.addEventListener(`click`, (event) => {
-                console.log('click');
                 if ( megaMenu.classList.contains(`visible`) ){
                     megaMenu.style.animation = `megaMenuOutAnimation forwards 1000ms ease-in-out`;
                     megaMenu.addEventListener(`animationend`, (event) => {
@@ -48,6 +48,25 @@ const { MainTitle, MainDescription } = Astro.props;
                     megaMenu.classList.add(`visible`);
                     menuIcon.classList.add(`icon-close`);
                     theLogo.style.opacity = '0';
+                }
+            });
+
+            const elMenu = document.querySelector('header');
+            const elCambiante = document.querySelector('.change-menu-color');
+
+            elMenu.classList.add(`change-color`);
+            window.addEventListener('scroll', () => {
+                const rect1 = elMenu.getBoundingClientRect();
+                const rect2 = elCambiante.getBoundingClientRect();
+
+                if ( rect2.y > 0 ){
+                    elMenu.classList.add(`change-color`);
+                } else {
+                    if ( rect1.x < rect2.x + rect2.width && rect1.x + rect1.width > rect2.x && rect1.y < rect2.y + rect2.height && rect1.y + rect1.height > rect2.y ) {
+                        elMenu.classList.add('change-color');
+                    } else {
+                        elMenu.classList.remove(`change-color`);
+                    }
                 }
             });
         })();

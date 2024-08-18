@@ -11,7 +11,7 @@ const { biz, location, photo, reverse=false } = Astro.props;
 
 <div class="row">
     <div class:list={['col-12', 'col-lg-6']} data-aos="fade-right" data-aos-duration="2200" data-aos-offset="200">
-        <div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div>
+        <a href="#"><div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div></a>
     </div>
     <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-center']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
         <h4 data-location={ location }>{ biz }</h4>
@@ -60,10 +60,17 @@ const { biz, location, photo, reverse=false } = Astro.props;
         color: transparent;
         background-size: cover;
         background-position: center;
+        transition: filter 0.4s ease-in-out;
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
 
         @media (max-width: 800px){
             margin-bottom: 0;
             height: 220px;
+            filter: unset;
         }
     }
 </style>

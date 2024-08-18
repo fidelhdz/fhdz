@@ -5,10 +5,9 @@ interface Props {
 }
 
 const { picture, invertOrder=false } = Astro.props;
-console.log( picture, invertOrder );
 ---
 
-<section id="fh-philosophy-section">
+<section class="fh-philosophy-section">
     { invertOrder &&
         <div class:list={["picture-decoration", { 'to-left' : invertOrder }]} style={{backgroundImage: `url(${ picture })` }} data-aos="fade-right" data-aos-offset="250"></div>
         <div class="container">
@@ -33,7 +32,7 @@ console.log( picture, invertOrder );
 </section>
 
 <style lang="scss">
-    #fh-philosophy-section {
+    .fh-philosophy-section {
         background-color: white;
         padding: 100px 0;
         position: relative;

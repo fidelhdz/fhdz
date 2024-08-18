@@ -17,18 +17,23 @@ import LogoIcon from "./svg/LogoIcon.astro"
         display: flex;
         width: 100%;
         justify-content: space-between;
-        padding: 40px 40px 0;
+        padding: 40px 40px 20px;
         overflow: hidden;
         position: sticky;
         box-sizing: border-box;
         top: 0;
         left: 0;
         z-index: 99;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
+        
+        &.change-color {
+            background-color: unset;
+            backdrop-filter: blur(0);
+        }
 
         @media (max-width: 800px){
             padding: 20px 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(3px);
         }
 
         .logo {
