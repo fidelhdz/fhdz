@@ -1,0 +1,74 @@
+---
+import TheHeader from "../components/theHeader.astro";
+import Menu from "../components/menu.astro";
+import MainLayout from "../layout/MainLayout.astro";
+import MouseIcon from "../components/svg/mouseIcon.astro";
+import PortfolioThumbs from "../components/portfolioThumbs.astro";
+import ContactSection from "../components/contactSection.astro";
+---
+
+<MainLayout MainTitle="Welcome como el tapete" MainDescription="Descripción de la page">
+	<TheHeader />	
+
+	<section id="fh-hero-section">
+		<div class="container-fluid">
+			<div class="fh-hero-text">
+				<div class="fh-pretitle" data-aos="fade-down">Fidel Hernandez</div>
+				<h1 data-aos="zoom-in">
+					Visual Identity Designer<br><small>&</small><br>UI/UX Designer
+				</h1>
+				<div class="fh-postitle" data-aos="fade-up">and illustrator, web designer, UI developer, creative, and consultant</div>
+			</div>
+			<div class="fh-hero-mouse">
+				<MouseIcon />
+			</div>
+		</div>
+	</section>
+
+	<section id="fh-about-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-6" data-aos="fade-right">
+					<h2 class="black">About.</h2>
+				</div>
+				<div class="col-12 col-lg-6 back-white" data-aos="fade-left">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices semper lorem ac aliquet. Integer ut nulla at diam bibendum malesuada. Vestibulum convallis enim ipsum, vitae egestas erat semper vitae. Aenean dignissim mollis orci, vehicula placerat nisi fringilla sed. Duis dignissim nibh et lorem elementum, eu bibendum elit porttitor.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh-portfolio-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="white">Portfolio.</h2>
+				</div>
+				<PortfolioThumbs biz="i. Dental Carranza" location="Monterrey, NL" photo="/assets/images/logos/logo-dental-carranza.webp" />
+				<PortfolioThumbs biz="ii. Bichotech" location="Monterrey, NL" photo="/assets/images/logos/logo-bichotech.webp" reverse />
+				<PortfolioThumbs biz="iii. Heber Banda" location="San Pedro Garza García, NL" photo="/assets/images/logos/logo-heber-banda.webp" />
+				<PortfolioThumbs biz="iv. Malenky" location="Monterrey, NL" photo="/assets/images/logos/logo-malenky.webp" reverse />
+				<PortfolioThumbs biz="v. Jade, coordinación de eventos" location="Ramos Arizpe, Coahuila" photo="/assets/images/logos/logo-jade.webp" />
+				<PortfolioThumbs biz="vi. Sofulabs" location="Tijuana, BC" photo="/assets/images/logos/logo-sofulabs.webp" reverse />
+				<PortfolioThumbs biz="vii. White Rhino Studio" location="Saltillo, Coahuila" photo="/assets/images/logos/logo-wrs.webp" />
+				<PortfolioThumbs biz="viii. Mooving Logistics" location="Monterrey, NL" photo="/assets/images/logos/logo-mooving.webp" reverse />
+			</div>
+		</div>
+	</section>
+
+	<section id="fh-thought-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="black simpleBlur">
+						The fusion of frontend development and graphic design is where creativity meets functionality. It's the art of transforming visual concepts into interactive experiences, where every line of code breathes life into beautifully crafted designs. Together, they shape the digital world—design speaks to the heart, while code brings it to reality. It's a dance between aesthetics and logic, creating seamless interfaces that are not just seen, but felt by the user.
+					</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<ContactSection />
+
+	<Menu />
+</MainLayout>

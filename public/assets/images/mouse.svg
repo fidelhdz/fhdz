@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 35 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-5913,-5745)">
+        <g id="Artboard11" transform="matrix(0.415569,0,0,0.747845,3455.45,1448.29)">
+            <rect x="5913.71" y="5745.46" width="84.222" height="106.974" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="5913.71" y="5745.46" width="84.222" height="106.974"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(2.36205,0,0,1.31257,5837.72,5733.38)">
+                    <path d="M51.9,9.2L48,9.2C39.7,9.2 33,16 33,24.3L33,49.7C33,58 39.8,64.8 48.1,64.8L52,64.8C60.3,64.8 67,58 67,49.7L67,24.3C67,16 60.3,9.2 51.9,9.2ZM64,49.7C64,56.4 58.6,61.8 51.9,61.8L48,61.8C41.3,61.8 35.9,56.4 35.9,49.7L35.9,24.3C35.9,17.6 41.3,12.2 48,12.2L51.9,12.2C58.6,12.2 64,17.6 64,24.3L64,49.7Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(2.36205,0,0,1.31257,5837.72,5733.38)">
+                    <path d="M50,20.6C49.2,20.6 48.5,21.3 48.5,22.1L48.5,32.8C48.5,33.6 49.2,34.3 50,34.3C50.8,34.3 51.5,33.6 51.5,32.8L51.5,22.1C51.5,21.2 50.8,20.6 50,20.6Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(2.36205,0,0,1.31257,5837.72,5733.38)">
+                    <path d="M56.1,81L51.5,85.6L51.5,72.2C51.5,71.4 50.8,70.7 50,70.7C49.2,70.7 48.5,71.4 48.5,72.2L48.5,85.7L43.9,81C43.3,80.4 42.4,80.4 41.8,81C41.2,81.6 41.2,82.5 41.8,83.1L49,90.3C49.1,90.4 49.3,90.6 49.5,90.6C49.7,90.7 49.9,90.7 50,90.7C50.1,90.7 50.4,90.7 50.5,90.6C50.7,90.5 50.9,90.4 51,90.3L58.2,83.1C58.8,82.5 58.8,81.6 58.2,81C57.6,80.4 56.7,80.5 56.1,81Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

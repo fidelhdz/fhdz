@@ -1,0 +1,126 @@
+---
+import LogoIcon from "./svg/LogoIcon.astro"
+---
+<div id="mega-menu">
+    <ul>
+        <li><LogoIcon /></li>
+        <li><a href="/">Home</a></li>
+        <li>
+            Portfolio
+            <ul>
+                <li><a href="">Dental Carranza</a></li>
+                <li><a href="">Bichotech</a></li>
+                <li><a href="">Heber Banda</a></li>
+                <li><a href="">Malenky</a></li>
+                <li><a href="">Jade, Coordinación de eventos</a></li>
+                <li><a href="">Sofulabs</a></li>
+                <li><a href="">White Rhino Studio</a></li>
+                <li><a href="">Mooving Logistics</a></li>
+            </ul>
+        </li>
+        <li><a href="/services/">Services</a></li>
+        <!-- <li><a href="blog/">Blog</a></li> -->
+    </ul>
+</div>
+
+<style lang="scss">
+    #mega-menu {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.96);
+        backdrop-filter: blur(20px);
+        width: 100svw;
+        height: 100svh;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        &.visible {
+            display: flex;
+            animation: megaMenuInAnimation forwards 1000ms ease-in-out;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-family: var(--fh-ff-cinzel);
+                font-size: 60px;
+                color: rgba(255, 255, 255, 0.7);
+
+                @media (max-width: 800px){
+                    font-size: 40px;
+                }
+
+                a {
+                    font-family: var(--fh-ff-cinzel);
+                    font-size: 60px;
+                    color: rgba(255, 255, 255, 0.7);
+
+                    @media (max-width: 800px){
+                        font-size: 40px;
+                    }
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.4);
+                    }
+                }
+
+                &:first-child {
+                    display: block;
+                    width: 160px;
+                    opacity: 0.2;
+                }
+
+                ul {
+                    margin-left: 100px;
+
+                    @media (max-width: 800px){
+                        margin-left: 50px;
+                    }
+
+                    li {
+                        margin: 8px 0;
+                        font-size: 14px;
+
+                        a {
+                            font-family: var(--fh-ff-raleway);
+                            font-size: 14px;
+                            text-transform: uppercase;
+                        }
+
+                        &:first-child {
+                            opacity: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes megaMenuInAnimation {
+        from {
+            opacity: 0;
+            filter: blur(30px);
+        }
+        to {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
+    @keyframes megaMenuOutAnimation {
+        from {
+            opacity: 1;
+            filter: blur(0);
+        }
+        to {
+            opacity: 0;
+            filter: blur(30px);
+        }
+    }
+</style>

@@ -1,0 +1,170 @@
+---
+import TheHeader from "../components/theHeader.astro";
+import Menu from "../components/menu.astro";
+import MainLayout from "../layout/MainLayout.astro";
+import MouseIcon from "../components/svg/mouseIcon.astro";
+import PhilosophySection from "../components/philosophySection.astro";
+import ContactSection from "../components/contactSection.astro";
+---
+
+<MainLayout MainTitle="Welcome como el tapete" MainDescription="Descripción de la page">
+	<TheHeader />	
+
+	<section id="fh-hero-section">
+		<div class="container-fluid">
+			<div class="fh-hero-text">
+				<h1 data-aos="zoom-in-down" data-aos-duration="1500">
+					Services
+				</h1>
+				<div class="fh-postitle" data-aos="fade-up">I worked as UI developer and UI/UX designer</div>
+			</div>
+			<div class="fh-hero-mouse">
+				<MouseIcon />
+			</div>
+		</div>
+	</section>
+
+	<section id="fh-services-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="100">
+					<h2 class="black">Visual Identity.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-offset="300">
+					<p>I help define the essence of your brand through designs that reflect its unique personality and values. From logo creation to complete brand development, I ensure that every element speaks cohesively, crafting a visual identity that leaves a lasting impression</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<PhilosophySection picture="/assets/images/services/pic-blue-print.webp">
+		<Fragment slot="philosophy-content">
+			<h2 class="black">Blueprint of a Brand</h2>
+			<p>Visual identity design is the blueprint of a brand’s soul, etched in color, form, and symbol.</p>
+		</Fragment>
+	</PhilosophySection>
+
+	<section id="fh-services-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="100">
+					<h2 class="black">UI/UX Design.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-offset="300">
+					<p>I design intuitive interfaces and seamless user experiences that guide, inspire, and convert. By paying attention to every detail, I create digital journeys where every interaction feels smooth and meaningful, ensuring that users can easily navigate through your platforms with satisfaction</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<PhilosophySection picture="/assets/images/services/pic-roads.webp" invertOrder>
+		<Fragment slot="philosophy-content">
+			<h2 class="black">Crafting the Journey</h2>
+			<p>UI/UX design is the art of crafting a journey, where every click is a step and every screen is a destination.</p>
+		</Fragment>
+	</PhilosophySection>
+
+	<section id="fh-services-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="100">
+					<h2 class="black">Web Design.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-offset="300">
+					<p>I build websites that are both visually stunning and technically sound. From the initial design to the final code, I ensure that your website performs optimally on all devices, delivering a responsive and engaging experience that supports your business goals.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<PhilosophySection picture="/assets/images/services/pic-cupula.webp" >
+		<Fragment slot="philosophy-content">
+			<h2 class="black">Building Digital Spaces</h2>
+			<p>Web design is the architecture of the digital world, where code and creativity build seamless spaces for exploration.</p>
+		</Fragment>
+	</PhilosophySection>
+
+	<section id="fh-services-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="100">
+					<h2 class="black">Illustrations.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-offset="300">
+					<p>I bring your concepts to life with custom illustrations that convey emotions and tell unique stories. Whether for branding, marketing, or editorial purposes, my illustrations add a creative, personal touch that aligns with your vision.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<PhilosophySection picture="/assets/images/services/pic-draw.webp" invertOrder>
+		<Fragment slot="philosophy-content">
+			<h2 class="black">Visual Storytelling</h2>
+			<p>Illustration is the visual language that speaks where words fall short, turning imagination into vivid reality.</p>
+		</Fragment>
+	</PhilosophySection>
+
+	<section id="fh-services-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="100">
+					<h2 class="black">UI Developer.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-offset="300">
+					<p>As a UI developer, I specialize in bringing designs to life through code. I transform static visual concepts into interactive and dynamic digital experiences that users can seamlessly engage with. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<PhilosophySection picture="/assets/images/services/pic-ui-dev.webp" >
+		<Fragment slot="philosophy-content">
+			<h2 class="black">Weaving Interactivity</h2>
+			<p>A UI programmer is the architect of interactivity, crafting the invisible threads that bring design to life with every click and swipe.</p>
+		</Fragment>
+	</PhilosophySection>
+
+	<section id="fh-services-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="100">
+					<h2 class="black">Creative Consultant.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-offset="300">
+					<p>As your creative consultant, I ignite innovation by guiding your ideas toward fresh and impactful solutions. I help you visualize and realize new possibilities, unlocking creative potential that takes your brand to the next level</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<PhilosophySection picture="/assets/images/services/pic-innovation.webp" invertOrder>
+		<Fragment slot="philosophy-content">
+			<h2 class="black">Igniting Innovation</h2>
+			<p>A creative consultant is the spark that ignites innovation, transforming ideas into bold visions that inspire action.</p>
+		</Fragment>
+	</PhilosophySection>
+
+	<section id="fh-services-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="100">
+					<h2 class="black">Manuals & Presentations.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-offset="300">
+					<p>I turn complex content into visually clear and professional manuals and presentations that communicate with precision and elegance. My designs make information accessible and engaging, ensuring that your guides and presentations are not only informative but also a pleasure to use.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<PhilosophySection picture="/assets/images/services/pic-arrows.webp" >
+		<Fragment slot="philosophy-content">
+			<h2 class="black">Guiding with Clarity</h2>
+			<p>Designing manuals and presentations is the craft of turning complexity into clarity, guiding the audience through ideas with precision and style.</p>
+		</Fragment>
+	</PhilosophySection>
+
+	<ContactSection />
+
+	<Menu />
+</MainLayout>

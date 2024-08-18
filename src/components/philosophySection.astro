@@ -1,0 +1,77 @@
+---
+interface Props {
+    picture: string;
+    invertOrder?: boolean;
+}
+
+const { picture, invertOrder=false } = Astro.props;
+console.log( picture, invertOrder );
+---
+
+<section id="fh-philosophy-section">
+    { invertOrder &&
+        <div class:list={["picture-decoration", { 'to-left' : invertOrder }]} style={{backgroundImage: `url(${ picture })` }} data-aos="fade-right" data-aos-offset="250"></div>
+        <div class="container">
+            <div class:list={["row", "pb-6", "pt-6", { 'justify-content-end' : invertOrder }, { 'justify-content-start' : !invertOrder }]} data-aos="fade-left" data-aos-offset="200">
+                <div class="col-12 col-lg-6">
+                    <slot name="philosophy-content" />
+                </div>
+            </div>
+        </div>
+    }
+    
+    { !invertOrder &&
+        <div class:list={["picture-decoration", { 'to-left' : invertOrder }]} style={{backgroundImage: `url(${ picture })` }} data-aos="fade-left" data-aos-offset="250"></div>
+        <div class="container">
+            <div class:list={["row", "pb-6", "pt-6", { 'justify-content-end' : invertOrder }, { 'justify-content-start' : !invertOrder }]} data-aos="fade-right" data-aos-offset="200">
+                <div class="col-12 col-lg-6">
+                    <slot name="philosophy-content" />
+                </div>
+            </div>
+        </div>
+    }
+</section>
+
+<style lang="scss">
+    #fh-philosophy-section {
+        background-color: white;
+        padding: 100px 0;
+        position: relative;
+
+        .picture-decoration {
+            background-color: gray;
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            right: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            @media (max-width: 800px){
+                position: relative;
+                height: 200px;
+                display: block;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+
+            &.to-left {
+                left: 0;
+            }
+        }
+
+        .col-lg-6 {
+            padding: 0 50px;
+
+            @media (max-width: 800px){
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 800px){
+            padding: 40px 26px;
+        }
+    }
+</style>
