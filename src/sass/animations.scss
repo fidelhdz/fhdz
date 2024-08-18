@@ -2,6 +2,10 @@
 .autoBlur {
     animation: autoBlurAnimation both ease-in-out;
     animation-timeline: view();
+
+    @media (width < 800px){
+        animation: unset;
+    }
 }
 
 @keyframes autoBlurAnimation {
@@ -26,6 +30,10 @@
     animation: simpleBlurAnimation ease-in-out;
     animation-timeline: view(95% auto);
     position: relative;
+
+    @media (width < 800px){
+        animation: unset;
+    }
 }
 
 @keyframes simpleBlurAnimation {
