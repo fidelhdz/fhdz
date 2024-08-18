@@ -47,6 +47,8 @@ a {
 }
 
 section {
+    overflow: hidden;
+    
     h2 {
         font-family: var(--fh-ff-cinzel);
         font-size: 40px;

@@ -9,11 +9,11 @@ interface Props {
 const { biz, location, photo, reverse=false } = Astro.props;
 ---
 
-<div class="row autoBlur">
-    <div class:list={['col-12', 'col-lg-6']}>
+<div class="row">
+    <div class:list={['col-12', 'col-lg-6']} data-aos="fade-right" data-aos-duration="2200" data-aos-offset="200">
         <div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div>
     </div>
-    <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-center']}>
+    <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-center']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
         <h4 data-location={ location }>{ biz }</h4>
     </div>
 </div>
