@@ -17,5 +17,9 @@ const { image } = Astro.props as BigOneProps;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+
+        @media (max-width: 75em){
+            background-attachment: unset;
+        }
     }
 </style>
