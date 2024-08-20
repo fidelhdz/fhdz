@@ -14,12 +14,12 @@ import LogoIcon from "./svg/LogoIcon.astro"
                 <li><a href="">Malenky</a></li>
                 <li><a href="">Jade, Coordinación de eventos</a></li>
                 <li><a href="">Sofulabs</a></li>
-                <li><a href="">White Rhino Studio</a></li>
+                <li><a href="/portfolio-wrs">White Rhino Studio</a></li>
                 <li><a href="">Mooving Logistics</a></li>
             </ul>
         </li>
         <li><a href="/services">Services</a></li>
-        <li><a href="/resume">My resume</a></li>
+        <li><a href="/resume">Resume</a></li>
         <!-- <li><a href="blog/">Blog</a></li> -->
     </ul>
 </div>
@@ -27,7 +27,7 @@ import LogoIcon from "./svg/LogoIcon.astro"
 <style lang="scss">
     #mega-menu {
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.96);
+        background-color: rgb(3 3 2 / 0.96);
         backdrop-filter: blur(20px);
         width: 100svw;
         height: 100svh;
@@ -50,24 +50,24 @@ import LogoIcon from "./svg/LogoIcon.astro"
 
             li {
                 font-family: var(--fh-ff-cinzel);
-                font-size: 60px;
-                color: rgba(255, 255, 255, 0.7);
+                font-size: 3.75rem;
+                color: rgb(255 255 255 / 0.7);
 
-                @media (max-width: 800px){
-                    font-size: 40px;
+                @media (max-width: 75em){
+                    font-size: 2.5rem;
                 }
 
                 a {
                     font-family: var(--fh-ff-cinzel);
-                    font-size: 60px;
-                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 3.75rem;
+                    color: rgb(255 255 255 / 0.7);
 
-                    @media (max-width: 800px){
-                        font-size: 40px;
+                    @media (max-width: 75em){
+                        font-size: 2.5rem;
                     }
 
                     &:hover {
-                        color: rgba(255, 255, 255, 0.4);
+                        color: rgba(255 255 255 / 0.4);
                     }
                 }
 
@@ -80,17 +80,17 @@ import LogoIcon from "./svg/LogoIcon.astro"
                 ul {
                     margin-left: 100px;
 
-                    @media (max-width: 800px){
+                    @media (max-width: 75em){
                         margin-left: 50px;
                     }
 
                     li {
                         margin: 8px 0;
-                        font-size: 14px;
+                        font-size: 0.875rem;
 
                         a {
                             font-family: var(--fh-ff-raleway);
-                            font-size: 14px;
+                            font-size: 0.875rem;
                             text-transform: uppercase;
                         }
 

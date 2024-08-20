@@ -24,7 +24,7 @@ import LogoIcon from "./svg/LogoIcon.astro"
         top: 0;
         left: 0;
         z-index: 99;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgb(3 3 2 / 0.5);
         backdrop-filter: blur(3px);
         
         &.change-color {
@@ -32,7 +32,7 @@ import LogoIcon from "./svg/LogoIcon.astro"
             backdrop-filter: blur(0);
         }
 
-        @media (max-width: 800px){
+        @media (max-width: 75em){
             padding: 20px 20px;
         }
 
@@ -68,7 +68,7 @@ import LogoIcon from "./svg/LogoIcon.astro"
 
                 &:hover {
                     .line {
-                        background-color: #2F5D6E;
+                        background-color: rgb(255 255 255 / 0.4);
                         width: 100%;
             
                         &.line-2 {
@@ -84,7 +84,7 @@ import LogoIcon from "./svg/LogoIcon.astro"
         
             .line {
                 display: block;
-                background-color: white;
+                background-color: rgb(255 255 255);
                 width: 100%;
                 height: 1px;
                 top: 0;
@@ -102,7 +102,7 @@ import LogoIcon from "./svg/LogoIcon.astro"
             &:hover {
                 .line {
                     display: block;
-                    background-color: #2F5D6E;
+                    background-color: rgb(255 255 255 / 0.4);
                     width: 30%;
                     height: 1px;
                     top: 0;

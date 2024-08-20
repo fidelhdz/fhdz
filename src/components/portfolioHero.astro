@@ -1,0 +1,155 @@
+---
+interface clientDataProps {
+    category: string;
+    projectName: string;
+    projectCover: string;
+    dataProject: Array<string>;
+}
+
+const { category, projectName, projectCover, dataProject } = Astro.props as clientDataProps;
+---
+<section id="fh-hero-section" class="change-menu-color portfolio-hero">
+    <div class="middle-back" style={{ backgroundImage: `url(${ projectCover })` }}>
+        <div class="overlay"></div>
+        <div class="client-presentation">
+            <div class="fh-pretitle text-end" data-aos="fade-down">{ category }</div>
+            <h1 class="text-end" data-aos="fade-right" data-aos-duration="1500">{ projectName }</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-6">
+                <div class="client-data">
+                    <ul>
+                        { dataProject.map((value) => (
+                            <li><small>{ value[0] }</small><span>{ value[1] }</span></li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    .portfolio-hero {
+        position:relative;
+        height: 100svh;
+        overflow: unset;
+
+        &::after {
+            display: none;
+        }
+
+        .container-fluid {
+            @media (max-width: 75em){
+                padding: 0;
+            }
+        }
+
+        .middle-back {
+            position: absolute;
+            width: 50%;
+            height: calc(100% + 105px);
+            top: -105px;
+            left: 0;
+            background-color: black;
+            background-position: center;
+            background-size: cover;
+
+            @media (max-width: 75em){
+                width: 100%;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-color: rgb(0 0 0 / 0.5);
+            }
+
+            .client-presentation {
+                position: relative;
+                padding-right: 100px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @media (max-width: 75em){
+                    padding-right: 50px;
+                }
+
+                h1 {
+                    font-family: var(--fh-ff-cinzel);
+                    color: rgb(255 255 255);
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100px;
+                        height: 1px;
+                        background-color: rgb(255 255 255);
+                        bottom: -30px;
+                        right: 0;
+
+                        @media (max-width: 75em){
+                            width: 50px;
+                        }
+                    }
+                }
+
+                .fh-pretitle {
+                    text-transform: uppercase;
+                    font-size: 0.75rem;
+                    color: rgb(255 255 255);
+
+                    @media (max-width: 75em){
+                        font-size: 0.625rem;
+                    }
+                }
+            }
+        }
+
+        .client-data {
+            position: absolute;
+            bottom: 100px;
+
+            @media (max-width: 75em){
+                bottom: 0;
+                margin: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                margin: 0 0 0 100px;
+                padding: 0;
+
+                @media (max-width: 75em){
+                    flex-direction: row;
+                    margin: 0;
+                    background-color: rgb(0 0 0 / 0.7);
+                    flex-wrap: wrap;
+                }
+                
+                li {
+                    color: rgb(255 255 255);
+                    padding: 18px 0;
+
+                    @media (max-width: 75em){
+                        width: 50%;
+                        padding: 16px 10px;
+                    }
+                    
+                    small {
+                        display: block;
+                        color: rgb(255 255 255 / 0.4);
+                    }
+                }
+            }
+        }
+    }
+</style>

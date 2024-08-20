@@ -1,17 +1,18 @@
 ---
-interface Props {
+interface PortfolioProps {
     photo: string;
     biz: string;
     location: string;
+    linkUrl: string;
     reverse?: boolean;
 }
 
-const { biz, location, photo, reverse=false } = Astro.props;
+const { linkUrl, biz, location, photo, reverse=false } = Astro.props as PortfolioProps;
 ---
 
 <div class="row">
     <div class:list={['col-12', 'col-lg-6']} data-aos="fade-right" data-aos-duration="2200" data-aos-offset="200">
-        <a href="#"><div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div></a>
+        <a href={ linkUrl }><div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div></a>
     </div>
     <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-center']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
         <h4 data-location={ location }>{ biz }</h4>
@@ -21,7 +22,7 @@ const { biz, location, photo, reverse=false } = Astro.props;
 <style lang="scss">
     .row {
         margin: 200px 0;
-        @media (max-width: 800px){
+        @media (max-width: 75em){
             padding: 0;
             margin-top: 10px;
         }
@@ -34,14 +35,14 @@ const { biz, location, photo, reverse=false } = Astro.props;
         h4 {
             font-family: var(--fh-ff-cinzel);
             margin: 0;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: white;
 
             &::after {
                 content: attr(data-location);
                 font-family: var(--fh-ff-raleway);
                 text-transform: uppercase;
-                font-size: 12px;
+                font-size: 0.75rem;
                 color: rgba(255, 255, 255, 0.5);
                 display: block;
             }
@@ -67,7 +68,7 @@ const { biz, location, photo, reverse=false } = Astro.props;
             filter: grayscale(0);
         }
 
-        @media (max-width: 800px){
+        @media (max-width: 75em){
             margin-bottom: 0;
             height: 220px;
             filter: unset;

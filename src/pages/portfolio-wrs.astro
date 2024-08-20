@@ -1,30 +1,28 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
 import TheHeader from "../components/theHeader.astro";
-import MouseIcon from "../components/svg/mouseIcon.astro";
 import Menu from "../components/menu.astro";
 import PhilosophySection from "../components/philosophySection.astro";
 import LogosContainer from "../components/logosContainer.astro";
 import PauseSection from "../components/pauseSection.astro";
 import ContactSection from "../components/contactSection.astro";
+import PortfolioHero from "../components/portfolioHero.astro";
 ---
 
 <MainLayout MainTitle="Welcome como el tapete" MainDescription="Descripción de la page">
 	<TheHeader />
 
-    <section id="fh-hero-section" class="change-menu-color">
-		<div class="container-fluid">
-			<div class="fh-hero-text">
-				<h1 data-aos="zoom-in-down" data-aos-duration="1500">
-					My Resume
-				</h1>
-				<div class="fh-postitle" data-aos="fade-up">The path of my professional career</div>
-			</div>
-			<div class="fh-hero-mouse">
-				<MouseIcon />
-			</div>
-		</div>
-	</section>
+    <PortfolioHero
+                category="Branding"
+                projectName="Re branding"
+                projectCover="/assets/images/portfolio/wrs/cover-wrs.webp"
+                dataProject={[
+                    ['Client', 'White Rhino Studio'],
+                    ['location', 'Saltillo, Coahuila MX'],
+                    ['Date', 'July 2024'],
+                    ['Role', 'Creative Director']
+                ]}
+                ></PortfolioHero>
 
     <section class="fh-resume-section experience">
 		<div class="container">

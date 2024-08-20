@@ -5,6 +5,7 @@ import MainLayout from "../layout/MainLayout.astro";
 import MouseIcon from "../components/svg/mouseIcon.astro";
 import PortfolioThumbs from "../components/portfolioThumbs.astro";
 import ContactSection from "../components/contactSection.astro";
+import PauseSection from "../components/pauseSection.astro";
 ---
 
 <MainLayout MainTitle="Welcome como el tapete" MainDescription="Descripción de la page">
@@ -32,7 +33,7 @@ import ContactSection from "../components/contactSection.astro";
 					<h2 class="black">About.</h2>
 				</div>
 				<div class="col-12 col-lg-6 back-white" data-aos="fade-left">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices semper lorem ac aliquet. Integer ut nulla at diam bibendum malesuada. Vestibulum convallis enim ipsum, vitae egestas erat semper vitae. Aenean dignissim mollis orci, vehicula placerat nisi fringilla sed. Duis dignissim nibh et lorem elementum, eu bibendum elit porttitor.</p>
+					<p>With over 20 years of experience in web development, design, and illustration, I’ve evolved from a passionate hobbyist into a seasoned professional, blending creativity and technology to craft unique digital experiences. My journey has taken me through roles as a creative director, interface designer, and UI/UX expert, all while continuously honing my skills in programming and product design. From small businesses to complex digital projects, my work is driven by a deep commitment to transforming ideas into compelling visual and interactive realities. Explore my portfolio to discover how my expertise can bring your vision to life.</p>
 				</div>
 			</div>
 		</div>
@@ -44,14 +45,14 @@ import ContactSection from "../components/contactSection.astro";
 				<div class="col-12" data-aos="fade-right">
 					<h2 class="white">Portfolio.</h2>
 				</div>
-				<PortfolioThumbs biz="i. Dental Carranza" location="Monterrey, NL" photo="/assets/images/logos/logo-dental-carranza.webp" />
-				<PortfolioThumbs biz="ii. Bichotech" location="Monterrey, NL" photo="/assets/images/logos/logo-bichotech.webp" reverse />
-				<PortfolioThumbs biz="iii. Heber Banda" location="San Pedro Garza García, NL" photo="/assets/images/logos/logo-heber-banda.webp" />
-				<PortfolioThumbs biz="iv. Malenky" location="Monterrey, NL" photo="/assets/images/logos/logo-malenky.webp" reverse />
-				<PortfolioThumbs biz="v. Jade, coordinación de eventos" location="Ramos Arizpe, Coahuila" photo="/assets/images/logos/logo-jade.webp" />
-				<PortfolioThumbs biz="vi. Sofulabs" location="Tijuana, BC" photo="/assets/images/logos/logo-sofulabs.webp" reverse />
-				<PortfolioThumbs biz="vii. White Rhino Studio" location="Saltillo, Coahuila" photo="/assets/images/logos/logo-wrs.webp" />
-				<PortfolioThumbs biz="viii. Mooving Logistics" location="Monterrey, NL" photo="/assets/images/logos/logo-mooving.webp" reverse />
+				<PortfolioThumbs linkUrl="#" biz="i. Dental Carranza" location="Monterrey, NL" photo="/assets/images/logos/logo-dental-carranza.webp" />
+				<PortfolioThumbs linkUrl="#" biz="ii. Bichotech" location="Monterrey, NL" photo="/assets/images/logos/logo-bichotech.webp" reverse />
+				<PortfolioThumbs linkUrl="#" biz="iii. Heber Banda" location="San Pedro Garza García, NL" photo="/assets/images/logos/logo-heber-banda.webp" />
+				<PortfolioThumbs linkUrl="#" biz="iv. Malenky" location="Monterrey, NL" photo="/assets/images/logos/logo-malenky.webp" reverse />
+				<PortfolioThumbs linkUrl="#" biz="v. Jade, coordinación de eventos" location="Ramos Arizpe, Coahuila" photo="/assets/images/logos/logo-jade.webp" />
+				<PortfolioThumbs linkUrl="#" biz="vi. Sofulabs" location="Tijuana, BC" photo="/assets/images/logos/logo-sofulabs.webp" reverse />
+				<PortfolioThumbs linkUrl="/portfolio-wrs" biz="vii. White Rhino Studio" location="Saltillo, Coahuila" photo="/assets/images/logos/logo-wrs.webp" />
+				<PortfolioThumbs linkUrl="#" biz="viii. Mooving Logistics" location="Monterrey, NL" photo="/assets/images/logos/logo-mooving.webp" reverse />
 			</div>
 		</div>
 	</section>
@@ -67,6 +68,8 @@ import ContactSection from "../components/contactSection.astro";
 			</div>
 		</div>
 	</section>
+
+	<PauseSection image="/assets/images/back-hands.webp" />
 
 	<ContactSection />
 
