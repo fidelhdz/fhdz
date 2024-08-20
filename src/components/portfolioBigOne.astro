@@ -1,0 +1,21 @@
+---
+interface BigOneProps {
+    image: string;
+}
+
+const { image } = Astro.props as BigOneProps;
+---
+
+<section class="fh-portfolio-big-one" style={{backgroundImage: `url(${image})`}}>
+</section>
+
+<style lang="scss">
+    .fh-portfolio-big-one {
+        height: 100svh;
+        background-color: rgb(3 3 2);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>

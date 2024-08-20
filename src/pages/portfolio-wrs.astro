@@ -7,6 +7,9 @@ import LogosContainer from "../components/logosContainer.astro";
 import PauseSection from "../components/pauseSection.astro";
 import ContactSection from "../components/contactSection.astro";
 import PortfolioHero from "../components/portfolioHero.astro";
+import PortfolioComparision from "../components/portfolioComparision.astro";
+import PortfolioBigOne from "../components/portfolioBigOne.astro";
+import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 ---
 
 <MainLayout MainTitle="Welcome como el tapete" MainDescription="Descripción de la page">
@@ -14,7 +17,7 @@ import PortfolioHero from "../components/portfolioHero.astro";
 
     <PortfolioHero
                 category="Branding"
-                projectName="Re branding"
+                projectName="Unleash the Creative Beast!"
                 projectCover="/assets/images/portfolio/wrs/cover-wrs.webp"
                 dataProject={[
                     ['Client', 'White Rhino Studio'],
@@ -24,145 +27,79 @@ import PortfolioHero from "../components/portfolioHero.astro";
                 ]}
                 ></PortfolioHero>
 
-    <section class="fh-resume-section experience">
+    <section class="fh-portfolio-section">
 		<div class="container">
 			<div class="row pt-6 pb-6">
 				<div class="col-12 col-lg-4" data-aos="fade-right">
-					<h2 class="black">Where UI/UX Meets Innovation.</h2>
+					<h2>I.</h2>
 				</div>
 				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
-					<p>As a hybrid UI/UX designer with a robust foundation in front-end development (ReactJS, Angular, Astro Build) and graphic design (visual identity, illustration, native & web UI/UX), I'm passionate about blending creativity with technology. My drive for crafting intuitive user experiences and visually captivating interfaces sets me apart. I'm eager to take on a new challenge where I can lead creative teams, push the boundaries of design, and contribute to the success of forward-thinking organizations. Let's build something extraordinary together.</p>
+                    <h2>Understanding<br>the Context</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus rem repellat molestias fugit, aliquid odit tenetur obcaecati, illum cumque, facilis voluptatum expedita porro possimus cum a. Dicta, cupiditate cumque.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-    <section class="fh-resume-section experience">
+    <PortfolioComparision imageOld="/assets/images/portfolio/wrs/before-logo.webp" imageNew="/assets/images/portfolio/wrs/after-logo.webp" />
+
+    <section class="fh-portfolio-section">
 		<div class="container">
 			<div class="row pt-6 pb-6">
 				<div class="col-12 col-lg-4" data-aos="fade-right">
-					<h2 class="black">Crafting Digital Visions.</h2>
+					<h2>II.</h2>
 				</div>
-				<div class="col-12 col-lg-8" data-aos="fade-left">
-                    <p>With over two decades of experience, my journey through web development began in 1998 as a hobby, evolving into a professional career by 2002. Over time, my passion for design flourished, leading me from web design in 2004 to becoming an interface designer by 2014. My creative leadership as a creative director, paired with a deep understanding of user experience design since 2016, has allowed me to craft seamless digital products. As a freelancer, I've worked closely with small businesses, designing and developing custom applications that meet their unique needs.</p>
-                    <p>My creative roots trace back to childhood, where I began illustrating from comic strips, eventually transitioning to professional illustration in 2006. In 2012, I shifted focus from web design to programming user interfaces and front-end development, combining my artistic vision with technical precision to create engaging digital experiences.</p>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Selecting<br>Typography</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus rem repellat molestias fugit, aliquid odit tenetur obcaecati, illum cumque, facilis voluptatum expedita porro possimus cum a. Dicta, cupiditate cumque.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-    <PhilosophySection picture="/assets/images/resume/pic-me.webp" invertOrder>
+    <PortfolioBigOne image="/assets/images/portfolio/wrs/big-one.webp"/>
+
+    <PortfolioTwoImages imageOne="/assets/images/portfolio/wrs/t-shirt.webp" imageTwo="/assets/images/portfolio/wrs/reticula.webp" />
+
+    <section class="fh-portfolio-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right">
+					<h2>III.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Creating<br>Color Palette</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus rem repellat molestias fugit, aliquid odit tenetur obcaecati, illum cumque, facilis voluptatum expedita porro possimus cum a. Dicta, cupiditate cumque.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <PortfolioTwoImages imageOne="/assets/images/portfolio/wrs/colors.webp" imageTwo="/assets/images/portfolio/wrs/block-colors.webp" />
+
+    <section class="fh-portfolio-section">
+        <div class="container">
+            <div class="row pt-6 pb-6">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <h2>IV.</h2>
+                </div>
+                <div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Conclusions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus rem repellat molestias fugit, aliquid odit tenetur obcaecati, illum cumque, facilis voluptatum expedita porro possimus cum a. Dicta, cupiditate cumque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <PauseSection image="/assets/images/portfolio/wrs/back-rhino.webp" />
+
+    <PhilosophySection picture="/assets/images/portfolio/behance.webp">
         <Fragment slot="philosophy-content">
-            <h2 class="black">Discover My Journey</h2>
-			<p>Explore the depth of my professional experience and creativity. Download my resume to get an inside look at the skills, projects, and insights that have shaped my career. Whether you're seeking a collaborator for your next big idea or simply want to learn more about my journey, my resume offers a detailed glimpse into the expertise I bring to the table. Dive in and let's create something remarkable together.</p>
-            <a href="/assets/documents/fidelhdz_resume.pdf" class="outline" download>Download resume</a>
+            <h2 class="black">Discover the Process</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas tenetur sit, sequi tempore magnam ea minus aspernatur expedita mollitia dolorum dicta necessitatibus quae temporibus, nemo veniam soluta ad iste?</p>
+            <a href="https://bit.ly/WRS170" class="outline" target="_blank">Project in Behance Portfolio</a>
         </Fragment>
     </PhilosophySection>
-
-    <section class="fh-resume-section experience">
-		<div class="container">
-			<div class="row pt-6 pb-6">
-				<div class="col-12 col-lg-4" data-aos="fade-right">
-					<h2 class="black">Transformative Digital Expertise.</h2>
-				</div>
-				<div class="col-12 col-lg-8" data-aos="fade-left">
-                    <h4>Creative Skills</h4>
-                    <dl>
-                        <dt>Branding & Design</dt>
-                        <dd>Expert in crafting compelling brands with logo design, brand manuals, and marketing materials.</dd>
-                        <dt>Illustration</dt>
-                        <dd>Skilled in creating vivid characters, backgrounds, and poses that bring ideas to life.</dd>
-                        <dt>UI/UX Design</dt>
-                        <dd>Proficient in designing intuitive user interfaces and seamless experiences across devices, including iconography and responsive design.</dd>
-                        <dt>Graphic Design</dt>
-                        <dd>Experienced in designing print materials for marketing and exhibitions, translating concepts into engaging visuals.</dd>
-                        <dt>Creative Direction</dt>
-                        <dd>Led creative teams and managed the visual and developmental aspects of high-impact projects.</dd>
-                    </dl>
-                    <hr class="mt-5 mb-5">
-                    <h4>Technical Skills</h4>
-                    <dl>
-                        <dt>Web Development</dt>
-                        <dd>Extensive experience in creating and optimizing websites and web applications using HTML, CSS, PHP, and JavaScript (jQuery, AngularJS).</dd>
-                        <dt>CMS Development</dt>
-                        <dd>Custom CMS creation and customization with PHP, MySQL, and popular platforms like WordPress, Joomla, and Drupal.</dd>
-                        <dt>Front-End & UI Development</dt>
-                        <dd>Specialized in programming user interfaces, including single-page applications (SPAs) and static pages using Astro.</dd>
-                        <dt>API Integration</dt>
-                        <dd>Seamless connection of web services and content management systems.</dd>
-                        <dt>Prototyping & Programming</dt>
-                        <dd>Development of interactive prototypes, backend systems, and internal tools using various programming languages and frameworks.</dd>
-                        <dt>Version Control & Team Collaboration</dt>
-                        <dd>Proficient with Git, and experienced in collaborative project environments, leading teams, and contributing to award-winning projects.</dd>
-                    </dl>
-                    <p class="mt-4">My diverse skill set combines creativity with technical expertise, delivering innovative solutions and high-quality results. Explore how my extensive background can bring your next project to life.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <LogosContainer title="Recent Companies I've Worked for" logosArray={[
-        ['Altimetrik', 'assets/images/resume/companies/logo-altimetrik.webp'],
-        ['Metagenics', 'assets/images/resume/companies/logo-metagenics.webp'],
-        ['Wynne Systems', 'assets/images/resume/companies/logo-wynne.webp'],
-        ['Exertus Marketing', 'assets/images/resume/companies/logo-exertus.webp'],
-    ]} />
-
-    <section class="fh-resume-section experience">
-		<div class="container">
-			<div class="row pt-6 pb-6">
-				<div class="col-12 col-lg-4" data-aos="fade-right">
-					<h2 class="black">Achievements that Define Excellence.</h2>
-				</div>
-				<div class="col-12 col-lg-8" data-aos="fade-left">
-                    <p>My career is marked by continuous growth and success, from earning a junior programmer position to becoming a creative director. I've led creative teams, implemented cutting-edge technologies like Macromedia Flash, and developed major government portals from scratch. My experience spans e-commerce, multidisciplinary design, and CMS functionality, where I've consistently delivered high-quality results.</p>
-                    <p>As a founding member of web application projects, I've implemented key features, adapted to new technologies like AngularJS, and created websites for high-profile clients such as Kodak Lens US and Everteam. My work has been recognized by film studios like Lionsgate and Bad Robot, and I've earned awards for interactivity and usability in web design.</p>
-                    <p>With expertise in UX design, interface development, and innovative product creation, my achievements showcase a versatile and dedicated professional ready to elevate your next project.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <PauseSection image="/assets/images/back-rustic.webp" />
-
-    <section class="fh-resume-section experience">
-		<div class="container">
-			<div class="row pt-6 pb-6">
-				<div class="col-12 col-lg-4" data-aos="fade-right">
-					<h2 class="black">Key Soft Skills that Drive Success.</h2>
-				</div>
-				<div class="col-12 col-lg-8" data-aos="fade-left">
-                    <dl>
-                        <dt>Creative Leadership</dt>
-                        <dd>Proven ability to guide and inspire creative teams to deliver high-quality results.</dd>
-                        <dt>Adaptability</dt>
-                        <dd>Quick to learn and integrate new technologies and methodologies.</dd>
-                        <dt>Collaborative Mindset</dt>
-                        <dd>Strong teamwork skills, fostering a positive and productive work environment.</dd>
-                        <dt>Problem Solving</dt>
-                        <dd>Expertise in identifying challenges and developing effective solutions.</dd>
-                        <dt>Communication</dt>
-                        <dd>Clear and concise communicator, capable of articulating complex ideas to diverse stakeholders.</dd>
-                        <dt>Attention to Detail</dt>
-                        <dd>Commitment to precision and quality in all aspects of work</dd>
-                        <dt>Innovative Thinking</dt>
-                        <dd>Constantly seeking new approaches to enhance user experience and design.</dd>
-                        <dt>Resilience</dt>
-                        <dd>Ability to thrive in fast-paced environments and manage multiple projects simultaneously.</dd>
-                    </dl>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <LogosContainer title="Creative companions on my journey" logosArray={[
-        ['White Rhino Studio', 'assets/images/resume/agencies/logo-wrs.webp'],
-        ['Bichotech', 'assets/images/resume/agencies/logo-bixo.webp'],
-        ['Sofulabs', 'assets/images/resume/agencies/logo-sofulabs.webp'],
-        ['Linetech', 'assets/images/resume/agencies/logo-linetech.webp'],
-    ]} />
-
-    <PauseSection image="/assets/images/back-bible.webp" />
 
     <ContactSection />
 

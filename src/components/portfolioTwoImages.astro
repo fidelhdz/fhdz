@@ -1,0 +1,59 @@
+---
+interface twoImagesProps {
+    imageOne: string;
+    imageTwo: string;
+}
+
+const { imageOne, imageTwo } = Astro.props as twoImagesProps;
+---
+
+<section class="fh-portfolio-split">
+    <div class="half" data-aos="fade-right">
+        <img src={ imageOne } width="80%" alt="" />
+    </div>
+
+    <div class="half" data-aos="fade-left">
+        <img src={ imageTwo } width="80%" alt="" />
+    </div>
+</section>
+
+<style lang="scss">
+    .fh-portfolio-split {
+        height: 800px;
+        background-color: rgb(44 44 44);
+        display: flex;
+
+        @media (max-width: 75em){
+            flex-direction: column;
+        }
+
+        .half {
+            width: 50%;
+            position: relative;
+            text-align: center;
+            display: block;
+
+            img {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:nth-child(1) {
+                @media (max-width: 75em){
+                    text-align: start;
+                }
+            }
+            &:nth-child(2) {
+                @media (max-width: 75em){
+                    text-align: end;
+                }
+            }
+
+            @media (max-width: 75em){
+                width: 100%;
+                height: 50%;
+            }
+        }
+    }
+</style>
