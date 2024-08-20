@@ -225,6 +225,10 @@ section {
 
         p {
             padding: 0 !important;
+                
+            &:not(:first-of-type){
+                margin-top: 20px;
+            }
         }
     }
 
