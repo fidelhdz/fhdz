@@ -9,18 +9,22 @@ import PortfolioHero from "../components/portfolioHero.astro";
 import PortfolioComparision from "../components/portfolioComparision.astro";
 import PortfolioBigOne from "../components/portfolioBigOne.astro";
 import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
+import NotesImage from "../images/portfolio/wrs/t-shirt.webp";
+import ReticulaImage from "../images/portfolio/wrs/reticula.webp";
+import ColorsImage from "../images/portfolio/wrs/colors.webp";
+import BlockColorsImage from "../images/portfolio/wrs/block-colors.webp";
 ---
 
 <MainLayout MainTitle="Fidel Hernandez :: Unleash the Creative Beast! Project" MainDescription="Inspired by the strength and determination of the white rhinoceros, this design aims to convey the solidity and impact that characterize our work.">
 	<TheHeader />
 
     <PortfolioHero
-                category="Visual identity"
+                category="Branding"
                 projectName="Unleash the Creative Beast!"
-                projectCover="/assets/images/portfolio/wrs/cover-wrs.webp"
+                projectCover="/assets/images/portfolio/wrs/cover.webp"
                 dataProject={[
                     ['Client', 'White Rhino Studio'],
-                    ['location', 'Saltillo, Coahuila MX'],
+                    ['Location', 'Saltillo, Coahuila MX'],
                     ['Date', 'July 2024'],
                     ['Role', 'Creative Director']
                 ]}
@@ -59,7 +63,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 
     <PortfolioBigOne image="/assets/images/portfolio/wrs/big-one.webp"/>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/wrs/t-shirt.webp" imageTwo="/assets/images/portfolio/wrs/reticula.webp" />
+    <PortfolioTwoImages imageOne={ NotesImage } imageTwo={ ReticulaImage } />
 
     <section class="fh-portfolio-section">
 		<div class="container">
@@ -76,7 +80,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 		</div>
 	</section>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/wrs/colors.webp" imageTwo="/assets/images/portfolio/wrs/block-colors.webp" />
+    <PortfolioTwoImages imageOne={ ColorsImage } imageTwo={ BlockColorsImage } />
 
     <section class="fh-portfolio-section">
         <div class="container">

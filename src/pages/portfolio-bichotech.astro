@@ -8,6 +8,10 @@ import ContactSection from "../components/contactSection.astro";
 import PortfolioHero from "../components/portfolioHero.astro";
 import PortfolioBigOne from "../components/portfolioBigOne.astro";
 import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
+import CapImage from "../images/portfolio/bixo/bixo-cap.webp";
+import GraffitiImage from "../images/portfolio/bixo/bixo-graffiti.webp";
+import ColorsImage from "../images/portfolio/bixo/bixo-colors.webp";
+import FlagImage from "../images/portfolio/bixo/bixo-flag.webp";
 ---
 
 <MainLayout MainTitle="Fidel Hernandez :: Bixo Attack! Project" MainDescription="The challenge was to create a visual identity that captured the essence of Bichotech and its connection to urban art.">
@@ -19,9 +23,10 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
                 projectCover="/assets/images/portfolio/bixo/cover.webp"
                 dataProject={[
                     ['Client', 'Bichotech'],
-                    ['location', 'Monterrey, NL MX'],
+                    ['Location', 'Monterrey, NL MX'],
                     ['Date', 'October 2023'],
-                    ['Role', 'Creative Director']
+                    ['Role', 'Creative Director'],
+                    ['Work', 'Visual identity and web design']
                 ]}
                 ></PortfolioHero>
 
@@ -57,7 +62,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 
     <PortfolioBigOne image="/assets/images/portfolio/bixo/bixo-draw.webp"/>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/bixo/bixo-cap.webp" imageTwo="/assets/images/portfolio/bixo/bixo-graffiti.webp" />
+    <PortfolioTwoImages imageOne={ CapImage } imageTwo={ GraffitiImage } />
 
     <section class="fh-portfolio-section">
 		<div class="container">
@@ -73,7 +78,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 		</div>
 	</section>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/bixo/bixo-colors.webp" imageTwo="/assets/images/portfolio/bixo/bixo-flag.webp" />
+    <PortfolioTwoImages imageOne={ ColorsImage } imageTwo={ FlagImage } />
 
     <section class="fh-portfolio-section">
         <div class="container">

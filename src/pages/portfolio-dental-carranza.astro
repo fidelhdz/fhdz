@@ -9,6 +9,13 @@ import PortfolioHero from "../components/portfolioHero.astro";
 import PortfolioComparision from "../components/portfolioComparision.astro";
 import PortfolioBigOne from "../components/portfolioBigOne.astro";
 import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
+import CoatImage from "../images/portfolio/carranza/dc-coat.webp";
+import FlagImage from "../images/portfolio/carranza/dc-flag.webp";
+import ColorImage from "../images/portfolio/carranza/dc-color.webp";
+import DC1Image from "../images/portfolio/carranza/dc-1.webp";
+import DC2Image from "../images/portfolio/carranza/dc-2.webp";
+import DC3Image from "../images/portfolio/carranza/dc-3.webp";
+import SocialImage from "../images/portfolio/carranza/dc-social.webp";
 ---
 
 <MainLayout MainTitle="Fidel Hernandez :: Getting Perfect Smiles Project" MainDescription="Together with Dr. Ramiro Carranza, we delved into the family's heraldic roots to create a visual identity that reflected their values and goals.">
@@ -20,7 +27,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
                 projectCover="/assets/images/portfolio/carranza/cover.webp"
                 dataProject={[
                     ['Client', 'Dental Carranza'],
-                    ['location', 'Monterrey, NL MX'],
+                    ['Location', 'Monterrey, NL MX'],
                     ['Date', 'June 2024'],
                     ['Role', 'Creative Director']
                 ]}
@@ -45,13 +52,13 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4">
-                    <img width="100%" src="/assets/images/portfolio/carranza/dc-coat.webp" alt="">
+                    <img width="100%" src={ CoatImage.src } alt="Family Coat of Arms" loading="lazy">
                 </div>
                 <div class="col-12 col-lg-4">
-                    <img width="100%" src="/assets/images/portfolio/carranza/dc-flag.webp" alt="">
+                    <img width="100%" src={ FlagImage.src } alt="Flag shape" loading="lazy">
                 </div>
                 <div class="col-12 col-lg-4">
-                    <img width="100%" src="/assets/images/portfolio/carranza/dc-color.webp" alt="">
+                    <img width="100%" src={ ColorImage.src } alt="Color combination" loading="lazy">
                 </div>
             </div>
         </div>
@@ -73,7 +80,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 		</div>
 	</section>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/carranza/dc-3.webp" imageTwo="/assets/images/portfolio/carranza/dc-1.webp" />
+    <PortfolioTwoImages imageOne={ DC3Image } imageTwo={ DC1Image } />
 
     <section class="fh-portfolio-section">
 		<div class="container">
@@ -89,7 +96,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 		</div>
 	</section>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/carranza/dc-social.webp" imageTwo="/assets/images/portfolio/carranza/dc-2.webp" />
+    <PortfolioTwoImages imageOne={ SocialImage } imageTwo={ DC2Image } />
 
     <section class="fh-portfolio-section">
         <div class="container">

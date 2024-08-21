@@ -8,6 +8,10 @@ import ContactSection from "../components/contactSection.astro";
 import PortfolioHero from "../components/portfolioHero.astro";
 import PortfolioBigOne from "../components/portfolioBigOne.astro";
 import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
+import FlyerImage from "../images/portfolio/jade/jade-flyer.webp";
+import CardsImage from "../images/portfolio/jade/jade-cards.webp";
+import ColorsImage from "../images/portfolio/jade/colors.webp";
+import StationeryImage from "../images/portfolio/jade/stationery.webp";
 ---
 
 <MainLayout MainTitle="Fidel Hernandez :: Majestic Jade Project" MainDescription="Jade is a Mexican event coordination agency dedicated to transforming dreams into reality.">
@@ -19,7 +23,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
                 projectCover="/assets/images/portfolio/jade/cover.webp"
                 dataProject={[
                     ['Client', 'Jade, coordinadora de eventos'],
-                    ['location', 'Ramos Arizpe, Coahuila MX'],
+                    ['Location', 'Ramos Arizpe, Coahuila MX'],
                     ['Date', 'January 2024'],
                     ['Role', 'Creative Director']
                 ]}
@@ -58,7 +62,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 
     <PortfolioBigOne image="/assets/images/portfolio/jade/typo.webp"/>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/jade/jade-flyer.webp" imageTwo="/assets/images/portfolio/jade/jade-cards.webp" />
+    <PortfolioTwoImages imageOne={ FlyerImage } imageTwo={ CardsImage } />
 
     <section class="fh-portfolio-section">
 		<div class="container">
@@ -74,7 +78,7 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
 		</div>
 	</section>
 
-    <PortfolioTwoImages imageOne="/assets/images/portfolio/jade/colors.webp" imageTwo="/assets/images/portfolio/jade/stationery.webp" />
+    <PortfolioTwoImages imageOne={ ColorsImage } imageTwo={ StationeryImage } />
 
     <section class="fh-portfolio-section">
         <div class="container">
