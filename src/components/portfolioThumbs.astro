@@ -14,7 +14,7 @@ const { linkUrl, biz, location, photo, reverse=false } = Astro.props as Portfoli
     <div class:list={['col-12', 'col-lg-6']} data-aos="fade-right" data-aos-duration="2200" data-aos-offset="200">
         <a href={ linkUrl }><div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div></a>
     </div>
-    <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-center']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
+    <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-start']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
         <h4 data-location={ location }>{ biz }</h4>
     </div>
 </div>
@@ -37,13 +37,18 @@ const { linkUrl, biz, location, photo, reverse=false } = Astro.props as Portfoli
             margin: 0;
             font-size: 1.5rem;
             color: white;
+            padding: 0 0 0 80px;
+
+            @media (max-width: 75em){
+                padding: 0;
+            }
 
             &::after {
                 content: attr(data-location);
                 font-family: var(--fh-ff-raleway);
                 text-transform: uppercase;
                 font-size: 0.75rem;
-                color: rgba(255, 255, 255, 0.5);
+                color: rgba(255 204 110 / 0.4);
                 display: block;
             }
         }
