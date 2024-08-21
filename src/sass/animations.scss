@@ -1,39 +1,36 @@
-/*  AUTOBLUR */
-.autoBlur {
-    animation: autoBlurAnimation both ease-in-out;
-    animation-timeline: view();
+/* SPIN PRELOADER */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes autoBlurAnimation {
+/* MOUSE ANIMATION */
+@keyframes mouseAnimation {
     0% {
-        filter: blur(40px) grayscale(1);
-        transform: scale(0%);
-        opacity: 0;
+        opacity: 0.05;
+        bottom: 40px;
     }
-    45%, 55% {
-        filter: blur(0) grayscale(0);
-        transform: scale(100%);
-        opacity: 1;
+    30% {
+        opacity: 0.3;
+        bottom: 10px;
     }
     100% {
-        filter: blur(40px) grayscale(1);
-        transform: scale(0%);
-        opacity: 0;
+        opacity: 0.05;
+        bottom: 40px;
     }
 }
 
-.simpleBlur {
-    animation: simpleBlurAnimation ease-in-out;
-    animation-timeline: view(95% auto);
-    position: relative;
-}
-
-@keyframes simpleBlurAnimation {
+/* GOODBYE - FADE OUT */
+@keyframes fadeOut {
     from {
-        filter: blur(20px);
+        opacity: 1;
     }
     to {
-        filter: blur(0);
+        opacity: 0;
     }
-
 }

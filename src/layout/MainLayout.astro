@@ -1,6 +1,7 @@
 ---
 import '../sass/styles.scss';
 import '../sass/animations.scss';
+import LogoIcon from '../components/svg/LogoIcon.astro';
 const { MainTitle, MainDescription } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -38,11 +39,29 @@ const { MainTitle, MainDescription } = Astro.props;
 	<meta property="twitter:description" content="Fidel Hernandez: Visual Identity Designer & UI/UX Designer... and illustrator, web designer, UI developer, creative, and consultant" />
 </head>
 <body>
+    <div id="preloading-page">
+        <div class="spin"></div>
+        <div class="icon">
+            <LogoIcon />
+        </div>
+    </div>
+
     <slot />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js" crossorigin="anonymous"></script>
     <script is:inline>
+        window.addEventListener('load', () => {
+            const elOverlay = document.querySelector('#preloading-page');
+            console.log(`Loaded!!`);
+            elOverlay.classList.add('good-bye');
+
+            elOverlay.addEventListener('animationend', () => {
+                if ( elOverlay.classList.contains('good-bye') ){
+                    elOverlay.remove();
+                }
+            });
+        });
         (() => {
             AOS.init({
                 duration: 2000,
