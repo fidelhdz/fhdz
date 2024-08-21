@@ -6,7 +6,11 @@ interface PauseImageProps {
 const { image } = Astro.props as PauseImageProps;
 ---
 
-<section class="big-pause" style={{backgroundImage: `url(${image})`}}></section>
+<section class="big-pause" style={{backgroundImage: `url(${image})`}}>
+    <div class="text">
+        <slot name="PauseFragment" />
+    </div>
+</section>
 
 <style lang="scss">
     .big-pause {
@@ -14,7 +18,9 @@ const { image } = Astro.props as PauseImageProps;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        // background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media (max-width: 75em){
             height: 600px;

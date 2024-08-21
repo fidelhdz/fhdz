@@ -103,6 +103,30 @@ section {
         margin: 0;
     }
 
+    &.big-pause {
+        .text {
+            padding: 0 26px;
+            h5 {
+                color: rgb(255 255 255 / 0.5);
+                font-family: var(--fh-ff-raleway);
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                letter-spacing: 0.4rem;
+                text-align: center;
+                line-height: 140%;
+
+                small {
+                    opacity: 0.6;
+                }
+
+                @media (max-width: 75em){
+                    letter-spacing: 0.2rem;
+                    line-height: 160%;
+                }
+            }
+        }
+    }
+
     &#fh-thought-section {
         background-color: var(--fh-color-light-back);
         padding: 130px 0 100px;
@@ -389,6 +413,7 @@ section {
 
             @media (max-width: 75em){
                 background-size: 160%;
+                opacity: 0.1;
             }
         }
 

@@ -91,7 +91,11 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
         </div>
     </section>
 
-    <PauseSection image="/assets/images/portfolio/carranza/dc-pause.webp" />
+    <PauseSection image="/assets/images/portfolio/carranza/dc-pause.webp">
+        <Fragment slot="PauseFragment">
+			<h5>A healthy mouth, a serene mind. In every smile, a reflection of our soul.</h5>
+		</Fragment>
+    </PauseSection>
 
     <!-- <PhilosophySection picture="/assets/images/portfolio/behance.webp">
         <Fragment slot="philosophy-content">

@@ -89,7 +89,11 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
         </div>
     </section>
 
-    <PauseSection image="/assets/images/portfolio/bixo/bixo-pause.webp" />
+    <PauseSection image="/assets/images/portfolio/bixo/bixo-pause.webp">
+        <Fragment slot="PauseFragment">
+			<h5>An urban canvas where imagination knows no bounds.</h5>
+		</Fragment>
+    </PauseSection>
 
     <!-- <PhilosophySection picture="/assets/images/portfolio/behance.webp">
         <Fragment slot="philosophy-content">

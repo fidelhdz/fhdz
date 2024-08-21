@@ -125,7 +125,11 @@ import ContactSection from "../components/contactSection.astro";
 		</div>
 	</section>
 
-    <PauseSection image="/assets/images/back-rustic.webp" />
+    <PauseSection image="/assets/images/back-rustic.webp">
+        <Fragment slot="PauseFragment">
+			<h5>Where reason waltzes with imagination.</h5>
+		</Fragment>
+    </PauseSection>
 
     <section class="fh-resume-section experience">
 		<div class="container">
@@ -164,7 +168,11 @@ import ContactSection from "../components/contactSection.astro";
         ['Linetech', '/assets/images/resume/agencies/logo-linetech.webp'],
     ]} />
 
-    <PauseSection image="/assets/images/back-bible.webp" />
+    <PauseSection image="/assets/images/back-bible.webp">
+        <Fragment slot="PauseFragment">
+			<h5>&laquo;I can do all things through Christ which strengtheneth me.&raquo;<br><small>Philippians 4:13 KJV</small></h5>
+		</Fragment>
+    </PauseSection>
 
     <ContactSection />
 

@@ -90,7 +90,11 @@ import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
         </div>
     </section>
 
-    <PauseSection image="/assets/images/portfolio/jade/back-jade.webp" />
+    <PauseSection image="/assets/images/portfolio/jade/back-jade.webp">
+        <Fragment slot="PauseFragment">
+			<h5>Two kindred spirits, bound by an invisible thread, celebrate eternity in a single moment.</h5>
+		</Fragment>
+    </PauseSection>
 
     <PhilosophySection picture="/assets/images/portfolio/behance.webp">
         <Fragment slot="philosophy-content">

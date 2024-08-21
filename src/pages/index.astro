@@ -69,7 +69,11 @@ import PauseSection from "../components/pauseSection.astro";
 		</div>
 	</section>
 
-	<PauseSection image="/assets/images/back-hands.webp" />
+	<PauseSection image="/assets/images/back-hands.webp">
+		<Fragment slot="PauseFragment">
+			<h5>A heart and hands, touched by the Lord, ready to serve.</h5>
+		</Fragment>
+	</PauseSection>
 
 	<ContactSection />
 
