@@ -2,17 +2,17 @@
 import MainLayout from "../../layout/MainLayout.astro";
 import TheHeader from "../../components/theHeader.astro";
 import Menu from "../../components/menu.astro";
-import PhilosophySection from "../../components/philosophySection.astro";
+// import PhilosophySection from "../../components/philosophySection.astro";
 import PauseSection from "../../components/pauseSection.astro";
 import ContactSection from "../../components/contactSection.astro";
 import PortfolioHero from "../../components/portfolioHero.astro";
 import PortfolioComparision from "../../components/portfolioComparision.astro";
 import PortfolioBigOne from "../../components/portfolioBigOne.astro";
 import PortfolioTwoImages from "../../components/portfolioTwoImages.astro";
-import Image12712 from "../../images/portfolio/27.12/2712-1.webp";
-import Image22712 from "../../images/portfolio/27.12/2712-2.webp";
-import Image32712 from "../../images/portfolio/27.12/2712-3.webp";
-import Image42712 from "../../images/portfolio/27.12/2712-4.webp";
+import Image12712 from "../../images/portfolio/2712/2712-1.webp";
+import Image22712 from "../../images/portfolio/2712/2712-2.webp";
+import Image32712 from "../../images/portfolio/2712/2712-3.webp";
+import Image42712 from "../../images/portfolio/2712/2712-4.webp";
 ---
 
 <MainLayout MainTitle="Fidel Hernandez :: 27.12 Project" MainDescription="27.12, an architecture and interior design workshop based in Monterrey, NL, has been a regional reference for over 10 years, supported by more than two decades of experience">
@@ -21,7 +21,7 @@ import Image42712 from "../../images/portfolio/27.12/2712-4.webp";
     <PortfolioHero
                 category="Branding"
                 projectName="27.12"
-                projectCover="/assets/images/portfolio/27.12/cover.webp"
+                projectCover="/assets/images/portfolio/2712/cover.webp"
                 dataProject={[
                     ['Client', '27.12 Taller de Arquitectura'],
                     ['Location', 'Monterrey, NL MX'],
@@ -45,7 +45,7 @@ import Image42712 from "../../images/portfolio/27.12/2712-4.webp";
 		</div>
 	</section>
 
-    <PortfolioComparision imageOld="/assets/images/portfolio/27.12/before-logo.webp" imageNew="/assets/images/portfolio/27.12/after-logo.webp" />
+    <PortfolioComparision imageOld="/assets/images/portfolio/2712/before-logo.webp" imageNew="/assets/images/portfolio/2712/after-logo.webp" />
 
     <section class="fh-portfolio-section">
 		<div class="container">
@@ -61,7 +61,7 @@ import Image42712 from "../../images/portfolio/27.12/2712-4.webp";
 		</div>
 	</section>
 
-    <PortfolioBigOne image="/assets/images/portfolio/27.12/big-one.webp"/>
+    <PortfolioBigOne image="/assets/images/portfolio/2712/big-one.webp"/>
 
     <PortfolioTwoImages imageOne={ Image12712 } imageTwo={ Image22712 } />
 
@@ -95,7 +95,7 @@ import Image42712 from "../../images/portfolio/27.12/2712-4.webp";
         </div>
     </section>
 
-    <PauseSection image="/assets/images/portfolio/27.12/2712-pause.webp">
+    <PauseSection image="/assets/images/portfolio/2712/2712-pause.webp">
         <Fragment slot="PauseFragment">
 			<h5>Architecture is the silent poetry that turns spaces into emotions and structures into eternal dreams.</h5>
 		</Fragment>

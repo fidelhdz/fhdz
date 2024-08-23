@@ -4,10 +4,9 @@ interface PortfolioProps {
     biz: string;
     location: string;
     linkUrl: string;
-    reverse?: boolean;
 }
 
-const { linkUrl, biz, location, photo, reverse=false } = Astro.props as PortfolioProps;
+const { linkUrl, biz, location, photo } = Astro.props as PortfolioProps;
 ---
 
 <div class="row">

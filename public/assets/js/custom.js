@@ -20,10 +20,10 @@ window.addEventListener('load', () => {
     const megaMenu = document.querySelector(`#mega-menu`);
     const theLogo = document.querySelector(`.logo`);
 
-    menuIcon.addEventListener(`click`, (event) => {
+    menuIcon.addEventListener(`click`, () => {
         if ( megaMenu.classList.contains(`visible`) ){
             megaMenu.style.animation = `megaMenuOutAnimation forwards 1000ms ease-in-out`;
-            megaMenu.addEventListener(`animationend`, (event) => {
+            megaMenu.addEventListener(`animationend`, () => {
                 menuIcon.classList.remove(`icon-close`);
                 theLogo.style.opacity = '1';
                 megaMenu.classList.remove(`visible`);
