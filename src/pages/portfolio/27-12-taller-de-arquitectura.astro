@@ -1,0 +1,121 @@
+---
+import MainLayout from "../../layout/MainLayout.astro";
+import TheHeader from "../../components/theHeader.astro";
+import Menu from "../../components/menu.astro";
+// import PhilosophySection from "../../components/philosophySection.astro";
+import PauseSection from "../../components/pauseSection.astro";
+import ContactSection from "../../components/contactSection.astro";
+import PortfolioHero from "../../components/portfolioHero.astro";
+import PortfolioComparision from "../../components/portfolioComparision.astro";
+import PortfolioBigOne from "../../components/portfolioBigOne.astro";
+import PortfolioTwoImages from "../../components/portfolioTwoImages.astro";
+import Image12712 from "../../images/portfolio/2712/2712-1.webp";
+import Image22712 from "../../images/portfolio/2712/2712-2.webp";
+import Image32712 from "../../images/portfolio/2712/2712-3.webp";
+import Image42712 from "../../images/portfolio/2712/2712-4.webp";
+---
+
+<MainLayout MainTitle="Fidel Hernandez :: 27.12 Project" MainDescription="27.12, an architecture and interior design workshop based in Monterrey, NL, has been a regional reference for over 10 years, supported by more than two decades of experience">
+	<TheHeader />
+
+    <PortfolioHero
+                category="Branding"
+                projectName="27.12"
+                projectCover="/assets/images/portfolio/2712/cover.webp"
+                dataProject={[
+                    ['Client', '27.12 Taller de Arquitectura'],
+                    ['Location', 'Monterrey, NL MX'],
+                    ['Date', 'July 2016'],
+                    ['Role', 'Creative Director'],
+                    ['Work', 'Visual identity and web design']
+                ]}
+                ></PortfolioHero>
+
+    <section class="fh-portfolio-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right">
+					<h2>I.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>The Challenge of Evolution:<br>From Workshop to Established Brand</h2>
+					<p>27.12, an architecture and interior design workshop based in Monterrey, NL, has been a regional reference for over 10 years, supported by more than two decades of experience. Their designs range from urbanist to modern and environmentalist, consistently creating spaces that exude luxury and sophistication. However, despite their success, they felt that their image did not fully reflect the elegance and professionalism of their projects. They sought a change, an evolution that would align their visual identity with the quality of their work.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <PortfolioComparision imageOld="/assets/images/portfolio/2712/before-logo.webp" imageNew="/assets/images/portfolio/2712/after-logo.webp" />
+
+    <section class="fh-portfolio-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right">
+					<h2>II.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Uncovering the Essence:<br>Research-Driven Design</h2>
+					<p>To address this challenge, we conducted an extensive study to assess 27.12's impact on the community of architects and the construction sector in Monterrey and surrounding areas. The study was based on surveys divided into two parts. The first part consisted of questions directed at different niches, such as architects, construction companies, and private individuals, to measure the workshop's perception. The second part involved presenting logos, some unrelated to the sector, to determine whether the existing symbol should be retained. The results were surprising: although they were commonly known as “the workshop,” 30% of respondents recognized the symbol, leading us to reconsider its importance and retain it as a key element in the new identity.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <PortfolioBigOne image="/assets/images/portfolio/2712/big-one.webp"/>
+
+    <PortfolioTwoImages imageOne={ Image12712 } imageTwo={ Image22712 } />
+
+    <section class="fh-portfolio-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right">
+					<h2>III.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Strategic Transformation:<br>Redefining 27.12's Image</h2>
+					<p>Armed with this data, we began the creative process, fully aware of the symbol's significance. Although we considered changing the name to “the workshop” and removing 27.12, the clients' connection to the symbol made us reconsider. 27.12's image was then refined, preserving its essence while giving it a more modern and professional touch. Despite being a project for a close friend, I approached it with the seriousness it deserved, making only the necessary adjustments to its structure while maintaining the brand's integrity. This project has become one of my favorites, and I will soon be responsible for developing their website as well.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <PortfolioTwoImages imageOne={ Image32712 } imageTwo={ Image42712 } />
+
+    <section class="fh-portfolio-section">
+        <div class="container">
+            <div class="row pt-6 pb-6">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <h2>IV.</h2>
+                </div>
+                <div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Website</h2>
+                    <p>Coming soon...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <PauseSection image="/assets/images/portfolio/2712/2712-pause.webp">
+        <Fragment slot="PauseFragment">
+			<h5>Architecture is the silent poetry that turns spaces into emotions and structures into eternal dreams.</h5>
+		</Fragment>
+    </PauseSection>
+
+    <section class="fh-portfolio-section">
+        <div class="container">
+            <div class="row pt-6 pb-6">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <h2>V.</h2>
+                </div>
+                <div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Conclusions</h2>
+                    <p>The transformation of 27.12's identity was not just a visual change but a carefully crafted strategy that respected the workshop's essence while elevating it to a new level of professionalism. This project not only strengthened their market presence but also cemented my commitment to creating brands that authentically reflect the vision and spirit of their creators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <ContactSection />
+
+    <Menu />
+</MainLayout>

@@ -1,0 +1,104 @@
+---
+import MainLayout from "../../layout/MainLayout.astro";
+import TheHeader from "../../components/theHeader.astro";
+import Menu from "../../components/menu.astro";
+// import PhilosophySection from "../../components/philosophySection.astro";
+import PauseSection from "../../components/pauseSection.astro";
+import ContactSection from "../../components/contactSection.astro";
+import PortfolioHero from "../../components/portfolioHero.astro";
+import PortfolioBigOne from "../../components/portfolioBigOne.astro";
+import PortfolioTwoImages from "../../components/portfolioTwoImages.astro";
+import MC1Image from "../../images/portfolio/montecarlo/mc-01.webp";
+import MC2Image from "../../images/portfolio/montecarlo/mc-02.webp";
+import MC3Image from "../../images/portfolio/montecarlo/mc-03.webp";
+import MC4Image from "../../images/portfolio/montecarlo/mc-04.webp";
+---
+
+<MainLayout MainTitle="Fidel Hernandez :: Fintech App Project" MainDescription="Laboris esse ex commodo sint officia ad cupidatat eiusmod.">
+	<TheHeader />
+
+    <PortfolioHero
+                category="UX & Product Design"
+                projectName="Fintech App"
+                projectCover="/assets/images/portfolio/montecarlo/cover.webp"
+                dataProject={[
+                    ['Client', 'Bank of Montecarlo (Hidden real name)'],
+                    ['Location', 'Los Angeles, CA USA'],
+                    ['Date', 'November 2021'],
+                    ['Role', 'Product Designer'],
+                    ['Work', 'UX Design']
+                ]}
+                ></PortfolioHero>
+
+    <section class="fh-portfolio-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right">
+					<h2>I.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>The Initial Challenge:<br>From Idea to Reality</h2>
+					<p>In November 2021, I was assigned to a project for a newly created fintech. The Product Owner (PO) was determined to create a mobile application on his own, thinking it would be simple. However, he soon realized that he needed a team to carry out the task. That’s when the company I worked for assigned me to the project, given my role as a UI programmer and UI/UX designer. After our first meeting, it became clear that although he had many ideas, he had not conducted any prior research or surveys.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <PortfolioBigOne image="/assets/images/portfolio/montecarlo/big-one.webp"/>
+
+    <section class="fh-portfolio-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right">
+					<h2>II.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Turning Ideas into Design:<br>A Collaborative Journey</h2>
+					<p>Recognizing the need for a more structured approach, we brought in a colleague who was a skilled interface designer. With her experience, we divided the tasks: the PO and I focused on research to create a solid user flow. In no time, we managed to develop a promising diagram, which allowed us to move forward and start discussions with the software architect. At the same time, we began working on mid-level designs to present to investors.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <PortfolioTwoImages imageOne={ MC1Image } imageTwo={ MC2Image } />
+
+    <section class="fh-portfolio-section">
+		<div class="container">
+			<div class="row pt-6 pb-6">
+				<div class="col-12 col-lg-4" data-aos="fade-right">
+					<h2>III.</h2>
+				</div>
+				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>From Conception to Presentation:<br>The Magic of UX Design</h2>
+					<p>With the investors’ approval, our designer began working on the visual details while I continued developing more screens for other sections of the app. It was a wonderful project, one that I enjoyed like a child in a toy store. Although I had worked on product designs before, this was the first time I participated in something of this magnitude.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <PortfolioTwoImages imageOne={ MC3Image } imageTwo={ MC4Image } />
+
+    <section class="fh-portfolio-section">
+        <div class="container">
+            <div class="row pt-6 pb-6">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <h2>IV.</h2>
+                </div>
+                <div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Conclusions</h2>
+                    <p>The project not only turned out to be a success, but it also allowed me to grow professionally. Collaboration and a passion for design led us to create something truly special.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <PauseSection image="/assets/images/portfolio/montecarlo/mc-pause.webp">
+        <Fragment slot="PauseFragment">
+			<h5>Personal finance is the balance between dreams and discipline.</h5>
+		</Fragment>
+    </PauseSection>
+
+    <ContactSection />
+
+    <Menu />
+</MainLayout>
