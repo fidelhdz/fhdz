@@ -1,33 +1,28 @@
 ---
-import MainLayout from "../layout/MainLayout.astro";
-import TheHeader from "../components/theHeader.astro";
-import Menu from "../components/menu.astro";
-import PhilosophySection from "../components/philosophySection.astro";
-import PauseSection from "../components/pauseSection.astro";
-import ContactSection from "../components/contactSection.astro";
-import PortfolioHero from "../components/portfolioHero.astro";
-import PortfolioComparision from "../components/portfolioComparision.astro";
-import PortfolioBigOne from "../components/portfolioBigOne.astro";
-import PortfolioTwoImages from "../components/portfolioTwoImages.astro";
-import NotesImage from "../images/portfolio/wrs/t-shirt.webp";
-import ReticulaImage from "../images/portfolio/wrs/reticula.webp";
-import ColorsImage from "../images/portfolio/wrs/colors.webp";
-import BlockColorsImage from "../images/portfolio/wrs/block-colors.webp";
+import MainLayout from "../../layout/MainLayout.astro";
+import TheHeader from "../../components/theHeader.astro";
+import Menu from "../../components/menu.astro";
+import PhilosophySection from "../../components/philosophySection.astro";
+import PauseSection from "../../components/pauseSection.astro";
+import ContactSection from "../../components/contactSection.astro";
+import PortfolioHero from "../../components/portfolioHero.astro";
+import PortfolioComparision from "../../components/portfolioComparision.astro";
+import PortfolioBigOne from "../../components/portfolioBigOne.astro";
+import PortfolioTwoImages from "../../components/portfolioTwoImages.astro";
 ---
 
-<MainLayout MainTitle="Fidel Hernandez :: Unleash the Creative Beast! Project" MainDescription="Inspired by the strength and determination of the white rhinoceros, this design aims to convey the solidity and impact that characterize our work.">
+<MainLayout MainTitle="Fidel Hernandez :: Sofulabs Project" MainDescription="Descripción de la page">
 	<TheHeader />
 
     <PortfolioHero
                 category="Branding"
-                projectName="Unleash the Creative Beast!"
-                projectCover="/assets/images/portfolio/wrs/cover.webp"
+                projectName="TJ Techs"
+                projectCover="/assets/images/portfolio/wrs/cover-wrs.webp"
                 dataProject={[
-                    ['Client', 'White Rhino Studio'],
-                    ['Location', 'Saltillo, Coahuila MX'],
-                    ['Date', 'July 2024'],
-                    ['Role', 'Creative Director'],
-                    ['Work', 'Visual identity and web design']
+                    ['Client', 'Sofulabs'],
+                    ['Location', 'Tijuana, BC MX'],
+                    ['Date', 'December 2022'],
+                    ['Role', 'Creative Director']
                 ]}
                 ></PortfolioHero>
 
@@ -39,8 +34,8 @@ import BlockColorsImage from "../images/portfolio/wrs/block-colors.webp";
 				</div>
 				<div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
                     <h2>Understanding<br>the Context</h2>
-					<p>The White Rhino Studio logo is more than just an image; it's a statement of intent. Inspired by the strength and determination of the white rhinoceros, this design aims to convey the solidity and impact that characterize our work.</p>
-                    <p>We've streamlined the design while preserving its core elements, introducing a striking negative space "R" and a more versatile truncated rhinoceros body. These changes allow for greater flexibility in various applications and better align with our new, impactful slogan. We also sought to strengthen our brand's social media engagement.</p>
+					<p>Jade is a Mexican event coordination agency dedicated to transforming dreams into reality. They specialize in creating extraordinary social events that are as unique as their clients.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia temporibus deserunt harum beatae rerum? Dignissimos excepturi qui inventore! Tempore laudantium dolor consectetur, obcaecati expedita sunt ut laboriosam est quisquam quos.</p>
 				</div>
 			</div>
 		</div>
@@ -64,7 +59,7 @@ import BlockColorsImage from "../images/portfolio/wrs/block-colors.webp";
 
     <PortfolioBigOne image="/assets/images/portfolio/wrs/big-one.webp"/>
 
-    <PortfolioTwoImages imageOne={ NotesImage } imageTwo={ ReticulaImage } />
+    <PortfolioTwoImages imageOne="/assets/images/portfolio/wrs/t-shirt.webp" imageTwo="/assets/images/portfolio/wrs/reticula.webp" />
 
     <section class="fh-portfolio-section">
 		<div class="container">
@@ -81,7 +76,7 @@ import BlockColorsImage from "../images/portfolio/wrs/block-colors.webp";
 		</div>
 	</section>
 
-    <PortfolioTwoImages imageOne={ ColorsImage } imageTwo={ BlockColorsImage } />
+    <PortfolioTwoImages imageOne="/assets/images/portfolio/wrs/colors.webp" imageTwo="/assets/images/portfolio/wrs/block-colors.webp" />
 
     <section class="fh-portfolio-section">
         <div class="container">
@@ -90,32 +85,14 @@ import BlockColorsImage from "../images/portfolio/wrs/block-colors.webp";
                     <h2>IV.</h2>
                 </div>
                 <div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
-                    <h2>Website</h2>
-                    <p>Coming soon...</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <PauseSection image="/assets/images/portfolio/wrs/back-rhino.webp">
-        <Fragment slot="PauseFragment">
-			<h5>Cloaked in ancestral shadows, it holds the whispers of creation.</h5>
-		</Fragment>
-    </PauseSection>
-
-    <section class="fh-portfolio-section">
-        <div class="container">
-            <div class="row pt-6 pb-6">
-                <div class="col-12 col-lg-4" data-aos="fade-right">
-                    <h2>V.</h2>
-                </div>
-                <div class="col-12 col-lg-8" data-aos="fade-left" data-aos-delay="400">
                     <h2>Conclusions</h2>
                     <p>As a team, we unanimously agree that the new logo is a great success. We have achieved a design that not only meets our expectations but also represents the evolution of the agency. The final result is a product of collaborative work and we are very proud of it.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <PauseSection image="/assets/images/portfolio/wrs/back-rhino.webp" />
 
     <PhilosophySection picture="/assets/images/portfolio/behance.webp">
         <Fragment slot="philosophy-content">
