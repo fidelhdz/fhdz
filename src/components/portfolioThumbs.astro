@@ -57,7 +57,7 @@ const { linkUrl, biz, location, photo } = Astro.props as PortfolioProps;
         display: block;
         max-width: 100%;
         width: 100%;
-        height: 400px;
+        height: clamp(220px, 30vh, 400px);
         background-color: black;
         text-align: center;
         vertical-align: middle;
@@ -74,7 +74,6 @@ const { linkUrl, biz, location, photo } = Astro.props as PortfolioProps;
 
         @media (max-width: 75em){
             margin-bottom: 0;
-            height: 220px;
             filter: unset;
         }
     }

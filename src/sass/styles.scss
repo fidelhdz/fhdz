@@ -112,7 +112,7 @@ section {
 
     h2 {
         font-family: var(--fh-ff-cinzel);
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 1.75vw, 2.5rem);
         line-height: 1;
 
         &::after {
@@ -242,7 +242,7 @@ section {
 
             &:nth-of-type(2) {
                 @media (max-width: 75em){
-                    padding: 0 26px 40px;
+                    padding: 10px 26px 40px;
                 }
             }
 
@@ -439,6 +439,41 @@ section {
         }
     }
 
+    &.fh-blog-container {
+        @extend #fh-about-section;
+
+        .blog-articles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &.fh-blog-content {
+        @extend #fh-about-section;
+
+        h3 {
+            &:not(:first-of-type) {
+                margin-top: 40px;
+            }
+        }
+
+        .date {
+            text-transform: uppercase;
+            font-size: 0.825rem;
+            margin: 30px 0;
+        }
+
+        p {
+            padding: 10px 0 !important;
+
+            &.cinzel {
+                font-family: var(--fh-ff-cinzel);
+                font-size: 1.2rem;
+            }
+        }
+    }
+
     &#fh-hero-section {
         width: 100%;
         height: calc(100svh - 85px);
@@ -483,22 +518,14 @@ section {
 
             h1 {
                 font-family: var(--fh-ff-cinzel);
-                font-size: 3.75rem;
+                font-size: clamp(2.5rem, 2.64vw, 3.75rem);
                 line-height: 1;
                 color: rgb(255 255 255 / 0.75);
 
-                @media (max-width: 75em){
-                    font-size: 2.5rem;
-                }
-
                 small {
                     font-family: var(--fh-ff-cinzel);
-                    font-size: 2.5rem;
-                    color: rgb(255 204 110 / 0.3);
-
-                    @media (max-width: 75em){
-                        font-size: 1.875rem;
-                    }
+                    font-size: clamp(1.875rem, 2vw, 2.5rem);
+                    color: rgb(255 204 110 / 0.4);
                 }
             }
 

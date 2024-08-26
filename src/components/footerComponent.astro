@@ -1,0 +1,60 @@
+<footer>
+    <div class="first-section">
+        <div class="city">Monterrey, NL, MX</div>
+        <div class="signature">Hunting for the<br /><span>WOW Effect!!</span></div>
+    </div>
+    <div class="second-section">
+        Website created with <a href="https://astro.build/" target="_blank">AstroBuild v4.14.2</a>, <a href="https://sass-lang.com/" target="_blank">SASS v1.72.0</a> and <a href="https://www.typescriptlang.org/" target="_blank">TypeScript v5.4.3</a>
+    </div>
+</footer>
+
+<style lang="scss">
+    footer {
+        background-color: var(--fh-color-light-back);
+        padding: 60px 40px;
+        border-top: 1px solid rgb(0 0 0 / 0.08);
+
+        .first-section {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            align-items: end;
+
+            .city {
+                font-size: clamp(0.75rem, 0.6vw, 0.8rem);
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+            }
+
+            .signature {
+                @extend .city;
+                text-align: right;
+                letter-spacing: unset;
+                font-family: var(--fh-ff-cinzel);
+
+                span {
+                    @extend .signature;
+                    font-size: 0.9rem;
+                    color: rgb(0 0 0)
+                }
+            }
+        }
+
+        .second-section {
+            font-size: clamp(0.75rem, 0.6vw, 0.8rem);
+            letter-spacing: 0.15rem;
+            border-top: 1px solid rgb(0 0 0 / 0.1);
+            padding: 20px 0 0;
+            text-align: right;
+
+            @media (max-width: 75em){
+                text-align: center;
+            }
+
+            a {
+                @extend .second-section;
+                border-top: unset;
+            }
+        }
+    }
+</style>
