@@ -1,0 +1,69 @@
+---
+import MainLayout from "../../layout/MainLayout.astro";
+import TheHeader from "../../components/theHeader.astro";
+import MouseIcon from "../../components/svg/mouseIcon.astro";
+import ContactSection from "../../components/contactSection.astro";
+import Menu from "../../components/menu.astro";
+---
+
+<MainLayout MainTitle="Welcome como el tapete" MainDescription="Descripción de la page">
+    <TheHeader />
+
+    <section id="fh-hero-section" class="change-menu-color">
+		<div class="container-fluid">
+			<div class="fh-hero-text">
+				<h1 data-aos="zoom-in-down" data-aos-duration="1500">
+					The 5 S.O.L.I.D. Principles for<br>Quality Software Development
+				</h1>
+				<div class="fh-postitle" data-aos="fade-up">A Simple Explanation</div>
+			</div>
+			<div class="fh-hero-mouse">
+				<MouseIcon />
+			</div>
+		</div>
+	</section>
+    
+    <section class="fh-blog-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <h4>Want to improve your code? The S.O.L.I.D. principles are key! Let's break them down simply:</h4>
+                    <div class="date">August 26, 2024</div>
+                </div>
+                <div class="col-12 col-lg-8" data-aos="fade-left">
+                    <h3>S - Single Responsibility Principle (SRP):</h3>
+                    <p class="cinzel">Each class should have a single responsibility.</p>
+                    <p>🎯 In short: “One thing, one job.”</p>
+                    <p>Imagine a toolbox where each tool does one specific task. That's how your code should be.</p>
+                    <p><em>Example: A coffee maker just makes coffee—it doesn't cook pasta.</em></p>
+                    <h3>O - Open/Closed Principle (OCP):</h3>
+                    <p class="cinzel">Classes should be open for extension but closed for modification.</p>
+                    <p>🚪 In short: “Extend without modifying.”</p>
+                    <p>Think of Lego sets. You can add new pieces without changing the existing ones.</p>
+                    <p><em>Example: Add a new ice cream flavor without altering the existing ones.</em></p>
+                    <h3>L - Liskov Substitution Principle (LSP):</h3>
+                    <p class="cinzel">Derived classes must be substitutable for their base classes.</p>
+                    <p>🔄 In short: “New versions should work the same.”</p>
+                    <p>When you upgrade your phone, you expect it to do the basic things your old one did, right?</p>
+                    <p><em>Example: A new charger should charge your device just like the old one.</em></p>
+                    <h3>I - Interface Segregation Principle (ISP):</h3>
+                    <p class="cinzel">Use specific interfaces to avoid unnecessary implementations.</p>
+                    <p>🎛️ In short: “Specific interfaces, not all-in-one.”</p>
+                    <p>It's better to have several small buttons than one big one that does everything.</p>
+                    <p><em>Example: A remote control has a specific button for each function.</em></p>
+                    <h3>D - Dependency Inversion Principle (DIP):</h3>
+                    <p class="cinzel">Depend on abstractions, not concrete implementations.</p>
+                    <p>🏗️ In short: “Rely on general concepts, not details.”</p>
+                    <p>It's like building with Lego blocks instead of gluing the pieces together, making it easier to change and improve.</p>
+                    <p><em>Example: Design a house based on the concept of “a house,” not specific materials.</em></p>
+                    <hr>
+                    <p>Remember, these principles will help you write cleaner, more flexible, and easier-to-maintain code. Apply them, and you'll see the difference!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <ContactSection />
+
+    <Menu />
+</MainLayout>

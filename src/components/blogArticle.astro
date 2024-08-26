@@ -1,0 +1,49 @@
+---
+interface ArticleProps {
+    backImage: string;
+    title: string;
+    fragment: string;
+}
+
+const { backImage, title, fragment } = Astro.props as ArticleProps;
+---
+<article>
+    <div class="image" style={{ backgroundImage: `url(${ backImage })` }}></div>
+    <div class="title">{ title }</div>
+    <div class="fragment">{ fragment }</div>
+    <div class="cta"><a href="/blog/the-5-solid-principles-for-quality-software-development" class="outline">View Article</a></div>
+</article>
+
+<style lang="scss">
+    article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: clamp(250px, 28%, 100%);
+
+        .image {
+            display: block;
+            height: 200px;
+            background-color: rgb(0 0 0 / 0.4);
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .title {
+            font-size: 1rem;
+        }
+
+        .fragment {
+            font-size: 0.825rem;
+        }
+
+        .cta {
+            .outline {
+                width: 100%;
+                text-align: center;
+                margin-top: 0;
+            }
+        }
+    }
+</style>
