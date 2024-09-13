@@ -5,9 +5,12 @@
     --fh-color-light: #6E6E6E;
     --fh-color-light-text: #ADADAD;
     --fh-color-light-back: #F1F1F1;
+    --fh-color-text: rgb(0 0 0 / 0.5);
     // TYPO
     --fh-ff-raleway: "Montserrat", sans-serif;
+    // --fh-ff-raleway: 'Helvetica Neue', Helvetica, sans-serif;
     --fh-ff-cinzel: "Cinzel", serif;
+    // --fh-ff-cinzel: "Times New Roman", TImes, serif;
 }
 
 // <uniquifier>: Use a unique and descriptive class name
@@ -28,6 +31,26 @@ body {
     background-color: var(--fh-color-back);
     position: relative;
     height: auto;
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
 }
 
 #preloading-page {
@@ -144,7 +167,7 @@ section {
     p {
         color: var(--fh-color-text);
         line-height: 1.7;
-        letter-spacing: 1px;
+        letter-spacing: normal;
         font-size: 0.875rem;
         margin: 0;
     }
@@ -189,7 +212,7 @@ section {
             font-family: var(--fh-ff-raleway);
             line-height: 1.7;
             letter-spacing: 1px;
-            font-size: 1.25rem;
+            font-size: 1rem;
             color: rgb(0 0 0 / 0.8);
             position: relative;
 
@@ -329,14 +352,17 @@ section {
                 margin-bottom: 0;
 
                 dt {
-                    color: rgb(3 3 2 / 0.4);
+                    color: rgb(3 3 2 / 0.75);
                     font-size: 1rem;
-                    letter-spacing: 1px;
+                    font-weight: 300;
+                    font-family:'Times New Roman', Times, serif;
+                    font-style: italic;
                 }
                 dd {
                     color: var(--fh-color-text);
                     font-size: 0.875rem;
-                    letter-spacing: 1px;
+                    letter-spacing: unset;
+                    margin: 0 0 10px;
                 }
             }
         }

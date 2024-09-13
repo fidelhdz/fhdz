@@ -11,7 +11,7 @@ const { picture, invertOrder=false } = Astro.props;
     { invertOrder &&
         <div class:list={["picture-decoration", { 'to-left' : invertOrder }]} style={{backgroundImage: `url(${ picture })` }} data-aos="fade-right" data-aos-offset="250"></div>
         <div class="container">
-            <div class:list={["row", "pb-6", "pt-6", { 'justify-content-end' : invertOrder }, { 'justify-content-start' : !invertOrder }]} data-aos="fade-left" data-aos-offset="200">
+            <div class:list={["row", "pb-6", "pt-6", { 'justify-content-end' : invertOrder }, { 'justify-content-start' : !invertOrder }]}>
                 <div class="col-12 col-lg-6">
                     <slot name="philosophy-content" />
                 </div>
@@ -22,7 +22,7 @@ const { picture, invertOrder=false } = Astro.props;
     { !invertOrder &&
         <div class:list={["picture-decoration", { 'to-left' : invertOrder }]} style={{backgroundImage: `url(${ picture })` }} data-aos="fade-left" data-aos-offset="250"></div>
         <div class="container">
-            <div class:list={["row", "pb-6", "pt-6", { 'justify-content-end' : invertOrder }, { 'justify-content-start' : !invertOrder }]} data-aos="fade-right" data-aos-offset="200">
+            <div class:list={["row", "pb-6", "pt-6", { 'justify-content-end' : invertOrder }, { 'justify-content-start' : !invertOrder }]}>
                 <div class="col-12 col-lg-6">
                     <slot name="philosophy-content" />
                 </div>
