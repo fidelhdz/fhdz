@@ -10,7 +10,7 @@ const { linkUrl, biz, location, photo } = Astro.props as PortfolioProps;
 ---
 
 <div class="portfolio-card">
-    <div class:list={['col-12', 'inner-card']}>
+    <div class:list={['inner-card']}>
         <a href={ linkUrl }><div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div></a>
     </div>
     <!-- <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-start']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
@@ -33,6 +33,7 @@ const { linkUrl, biz, location, photo } = Astro.props as PortfolioProps;
      
         .inner-card {
             height: 100%;
+            padding: 0;
         }
     }
 

@@ -10,6 +10,7 @@
     --fh-ff-raleway: "Montserrat", sans-serif;
     // --fh-ff-raleway: 'Helvetica Neue', Helvetica, sans-serif;
     --fh-ff-cinzel: "Cinzel", serif;
+    --fh-ff-bebas: 'Bebas Neue', sans-serif;
     // --fh-ff-cinzel: "Times New Roman", TImes, serif;
 }
 
@@ -134,7 +135,7 @@ section {
     overflow: hidden;
 
     h2 {
-        font-family: var(--fh-ff-cinzel);
+        font-family: var(--fh-ff-bebas);
         font-size: clamp(2rem, 1.75vw, 2.5rem);
         line-height: 1;
 
@@ -242,13 +243,21 @@ section {
             position: relative;
             margin-top: 80px;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 1.5rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
 
-            @media (max-width: 75em){
+            @media (width < 75em){
+                padding: 20px 26px;
+            }
+
+            @media (width > 75em){
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+
+            @media (width < 48em){
                 grid-template-columns: 1fr;
-                gap: 0;
             }
 
             .grid-col-span-2 {
@@ -292,7 +301,7 @@ section {
 
             &:nth-of-type(2) {
                 @media (max-width: 75em){
-                    padding: 10px 26px 40px;
+                    padding: 40px 26px;
                 }
             }
 
@@ -468,7 +477,7 @@ section {
             h3 {
                 margin: 0;
                 font-size: 1.25rem;
-                font-family: var(--fh-ff-cinzel);
+                font-family: var(--fh-ff-bebas);
 
                 small {
                     font-size: 0.875rem;
@@ -483,8 +492,9 @@ section {
 
         h5 {
             padding: 0 60px;
-            font-family: var(--fh-ff-cinzel);
-            letter-spacing: 0.2rem;
+            font-size: 2rem;
+            font-family: var(--fh-ff-bebas);
+            // letter-spacing: 0.2rem;
 
             @media (max-width: 75em){
                 padding: 0;
@@ -570,13 +580,13 @@ section {
             text-align: center;
 
             h1 {
-                font-family: var(--fh-ff-cinzel);
+                font-family: var(--fh-ff-bebas);
                 font-size: clamp(2.5rem, 2.64vw, 3.75rem);
                 line-height: 1;
                 color: rgb(255 255 255 / 0.75);
 
                 small {
-                    font-family: var(--fh-ff-cinzel);
+                    font-family: var(--fh-ff-bebas);
                     font-size: clamp(1.875rem, 2vw, 2.5rem);
                     color: rgb(255 204 110 / 0.4);
                 }
