@@ -9,21 +9,30 @@ interface PortfolioProps {
 const { linkUrl, biz, location, photo } = Astro.props as PortfolioProps;
 ---
 
-<div class="row">
-    <div class:list={['col-12', 'col-lg-6']} data-aos="fade-right" data-aos-duration="2200" data-aos-offset="200">
+<div class="portfolio-card">
+    <div class:list={['col-12', 'inner-card']}>
         <a href={ linkUrl }><div class="portfolio-thumb" style={{backgroundImage: `url(${ photo })` }}>{ biz }</div></a>
     </div>
-    <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-start']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
+    <!-- <div class:list={['col-12', 'col-lg-6', 'middle-text', 'justify-content-start']} data-aos="fade-left" data-aos-duration="2200" data-aos-offset="200">
         <h4 data-location={ location }>{ biz }</h4>
-    </div>
+    </div> -->
 </div>
 
 <style lang="scss">
     .row {
-        margin: 30px 0;
-        @media (max-width: 75em){
-            padding: 0;
-            margin-top: 10px;
+        // margin: 30px 0;
+
+        // @media (max-width: 75em){
+        //     padding: 0;
+        //     margin-top: 10px;
+        // }
+    }
+
+    .portfolio-card {
+        height: 100%;
+     
+        .inner-card {
+            height: 100%;
         }
     }
 
@@ -57,7 +66,8 @@ const { linkUrl, biz, location, photo } = Astro.props as PortfolioProps;
         display: block;
         max-width: 100%;
         width: 100%;
-        height: clamp(220px, 30vh, 400px);
+        height: 100%;
+        min-height: 300px;
         background-color: black;
         text-align: center;
         vertical-align: middle;

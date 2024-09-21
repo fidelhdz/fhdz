@@ -235,11 +235,38 @@ section {
     }
 
     &#fh-portfolio-section {
-        .col-12 {
-            padding: 100px 0;
+        overflow: unset;
+        padding: 100px 0;
+
+        .list-of-thumbs {
+            position: relative;
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1.5rem;
 
             @media (max-width: 75em){
-                padding: 40px 26px;
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .grid-col-span-2 {
+                grid-column: span 2;
+                grid-row: span 2;
+
+                @media (max-width: 75em){
+                    grid-column: unset;
+                    grid-row: unset;
+                }
+            }
+        }
+
+        .col-12 {
+            // padding: 100px 0;
+
+            @media (max-width: 75em){
+                padding: 20px 26px;
             }
 
             &.image-portfolio {
